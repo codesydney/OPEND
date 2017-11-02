@@ -1,5 +1,5 @@
 from app import db
-from .models import nsw_birth_rates
+from models import nsw_birth_rates
 
 #create the database and the db tables
 db.create_all(nsw_birth_rates("2014","Albion Park NSW 2527","Albion Park","NSW","2527","193"))
