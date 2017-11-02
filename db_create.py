@@ -1,4 +1,4 @@
-from app import db
+from app import db, models
 from models import nsw_birth_rates
 
 #create the database and the db tables
