@@ -5,6 +5,11 @@ from flask_bootstrap import Bootstrap
 
 Bootstrap(app)
 
+#config
+import os
+app.config.from_object(os.environ['APP_SETTINGS'])
+print (os.environ['APP_SETTINGS'])
+
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
