@@ -60,9 +60,43 @@
 
                <br>
                                              
-               <div style = "margin-left:10px">               
+            <!--Population information-->
+			   <h2 style="color:#3d475c;font-size:30px;font-weight:bold;text-align:left;margin-left:10px">NSW Population Information</h2>
+             <div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">Explored by <a href="https://github.com/engramar" target="_blank">Bin Liu</a></div>	  
+
+			   <table style="font-size:20px;width:90%;text-align:left;font-weight:normal;margin-left:10px" border="1">
+    			   <tr>
+       			     <th>Year</th>
+    				  <th>Code</th>
+    				  <th>Suburb</th>
+    	   			  <th>State</th>
+    				  <th>Postcode</th>
+    				  <th>Population</th>			  
+    			   </tr>				   		
+    			   			   
+    			   {% for population in population_list %}
+    			   <tr>
+       			      <td>{% print population[0] %}</td>
+       			      <td>{% print population[1] %}</td>
+       			      <td>{% print population[2] %}</td>
+       			      <td>{% print population[3] %}</td>
+       			      <td>{% print population[4] %}</td>
+       			      <td>{% print population[5] %}</td>
+    			   </tr>
+    			   {% endfor %}               
+    			   <br> 
+			   </table>
+
+             <br>
+                                             
+             <div style = "margin-left:10px">               
 			   {{ resultform.Submit2 }}
 			   </div>
+
+
+
+
+
             </div>
             
          </fieldset>

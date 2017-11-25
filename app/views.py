@@ -36,10 +36,29 @@ def index():
 			birth_rate_list.append(selected_fields)		
 		#************ END- NSW Birth Rate Information API Call **********************
 
+		#************* BEGIN - NSW Population Information API Call ****************** 
+		population_url = "https://nswpopulation20171121.herokuapp.com/details/"+InputSuburb
+		request = urllib.request.Request(population_url)
+		my_response_popu = urllib.request.urlopen(request)
+		json_response_popu = json.load(my_response_popu)
+		print(json_response_popu)
+
+		value_details = []
+		value_details = json_response_popu.get('details')
+
+		population_list = []
+		for d in value_details:
+			print("line 51",d)
+			selected_fields=[d['YEAR'],d['CODE'],d['SUBURB'],d['STATE'],d['POSTCODE'],d['POPULATION']]
+			population_list.append(selected_fields)
+		#************ END- NSW Population Information API Call **********************
+		print("line 54",population_list)
+
 		return render_template('result.html',
 								resultform=resultform,
 								InputSuburb=InputSuburb,
-								birth_rate_list=birth_rate_list)								
+								birth_rate_list=birth_rate_list,
+                          population_list=population_list)								
 								
 	elif resultform.validate_on_submit() and resultform.Submit2.data:	
          return redirect(url_for('index'))
