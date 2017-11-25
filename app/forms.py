@@ -7,7 +7,7 @@ from werkzeug.datastructures import MultiDict
 
 class MainForm(Form):
 	OpendTitle = StringField("OPEND")
-	InputAddress = StringField('Address', [validators.Required("Please enter your address.")],render_kw={"placeholder": "","size":"10"})	
+	InputSuburb = StringField('Suburb',[validators.Required("Enter suburb")])	
 	Submit1 = SubmitField('Submit',render_kw={"size":"90"})	    
 
 class ResultForm(Form):

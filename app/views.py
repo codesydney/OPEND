@@ -1,7 +1,9 @@
-from flask import render_template, flash, redirect, request, url_for
+from flask import render_template, flash, redirect, request, url_for, jsonify, Response
 from app import app, db, models
 from .forms import MainForm, ResultForm
 from flask_bootstrap import Bootstrap
+import json
+import urllib.request
 
 Bootstrap(app)
 
@@ -17,21 +19,38 @@ def index():
 	resultform = ResultForm()
 	
 	if form.validate_on_submit() and form.Submit1.data:
-		InputAddress = form.InputAddress.data
-		recs = models.nsw_birth_rates.query.order_by(models.nsw_birth_rates.count.desc()).all()	
+		InputSuburb = form.InputSuburb.data
 
-		suburb_list = []		
-		for rec in recs:
-			selected_fields=[rec.year,rec.locality,rec.suburb,rec.state,rec.postcode,rec.count]
-			suburb_list.append(selected_fields)		
+		#************* BEGIN - NSW Birth Rate Information API Call ****************** 
+		birth_rate_url = "http://codesydneyopend.herokuapp.com/details/"+InputSuburb
+		request = urllib.request.Request(birth_rate_url)
+		my_response = urllib.request.urlopen(request)
+		json_response = json.load(my_response)
+
+		value_details = []
+		value_details = json_response.get('details')
+
+		birth_rate_list = []
+		for d in value_details:
+			selected_fields=[d['YEAR'],d['LOCALITY'],d['SUBURB'],d['STATE'],d['POSTCODE'],d['COUNT']]
+			birth_rate_list.append(selected_fields)		
+		#************ END- NSW Birth Rate Information API Call **********************
 
 		return render_template('result.html',
 								resultform=resultform,
-								InputAddress=InputAddress,
-								suburb_list=suburb_list)								
+								InputSuburb=InputSuburb,
+								birth_rate_list=birth_rate_list)								
 								
 	elif resultform.validate_on_submit() and resultform.Submit2.data:	
          return redirect(url_for('index'))
 	else:		
 	    return render_template('mainform.html',
                                 form=form)
+
+@app.route('/autocomplete', methods=['GET'])
+def autocomplete():
+    search = request.args.get('q')
+    query = db.session.query(models.nsw_birth_rates.suburb).filter(models.nsw_birth_rates.suburb.ilike("%"+str(search)+"%"))	
+    results = [mv[0] for mv in query.all()]
+    return jsonify(matching_results=results)
+    

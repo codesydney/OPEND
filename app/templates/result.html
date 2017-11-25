@@ -29,10 +29,10 @@
 				</style>
 						
             <div style = "font-size:25px;font-weight:normal;text-align:left;margin-left:15px">
-  	           <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left;margin-left:10px">Input Address</h2>
-			   <div style="font-size:20px;font-weight:normal;text-align:left;margin-left:10px">{{InputAddress}}</div><br>
+  	           <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left;margin-left:10px">Input Suburb</h2>
+			   <div style="font-size:20px;font-weight:normal;text-align:left;margin-left:10px">{{InputSuburb}}</div><br>
 
-			   <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left;margin-left:10px">Suburb Information</h2>
+			   <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left;margin-left:10px">Related Information</h2>
 			   <table style="font-size:20px;width:90%;text-align:left;font-weight:normal;margin-left:10px" border="1">
 			   <tr>
    			      <th>Year</th>
@@ -43,14 +43,14 @@
 				  <th>Count</th>			  
 			   </tr>				   		
 			   			   
-			   {% for suburb in suburb_list %}
+			   {% for birth_rate in birth_rate_list %}
 			   <tr>
-   			      <td>{% print suburb[0] %}</td>
-				  <td>{% print suburb[1] %}</td>
-				  <td>{% print suburb[2] %}</td>
-				  <td>{% print suburb[3] %}</td>
-				  <td>{% print suburb[4] %}</td>
-				  <td>{% print suburb[5] %}</td>
+   			      <td>{% print birth_rate[0] %}</td>
+   			      <td>{% print birth_rate[1] %}</td>
+   			      <td>{% print birth_rate[2] %}</td>
+   			      <td>{% print birth_rate[3] %}</td>
+   			      <td>{% print birth_rate[4] %}</td>
+   			      <td>{% print birth_rate[5] %}</td>
 			   </tr>
 			   {% endfor %}               
 			   <br> 
