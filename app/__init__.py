@@ -14,5 +14,9 @@ bootstrap = Bootstrap(app)
 
 #importing main must be after db = SQLAlchemy(app)
 from .main import main
+from .population import population
+from .birthrate import birthrate
 
 app.register_blueprint(main,url_prefix='/main')
+app.register_blueprint(population,url_prefix='/population')
+app.register_blueprint(birthrate,url_prefix='/birthrate')

@@ -1,0 +1,900 @@
+2014|Albion Park NSW 2527|Albion Park|NSW|2527|193
+2013|Albion Park NSW 2527|Albion Park|NSW|2527|191
+2012|Albion Park NSW 2527|Albion Park|NSW|2527|215
+2007|Albion Park NSW 2527|Albion Park|NSW|2527|182
+2001|Albion Park NSW 2527|Albion Park|NSW|2527|180
+2011|Annandale NSW 2038|Annandale|NSW|2038|187
+2016|Armidale NSW 2350|Armidale|NSW|2350|266
+2015|Armidale NSW 2350|Armidale|NSW|2350|238
+2014|Armidale NSW 2350|Armidale|NSW|2350|279
+2013|Armidale NSW 2350|Armidale|NSW|2350|267
+2012|Armidale NSW 2350|Armidale|NSW|2350|305
+2011|Armidale NSW 2350|Armidale|NSW|2350|270
+2007|Armidale NSW 2350|Armidale|NSW|2350|255
+2006|Armidale NSW 2350|Armidale|NSW|2350|285
+2001|Armidale NSW 2350|Armidale|NSW|2350|288
+2007|Arncliffe NSW 2205|Arncliffe|NSW|2205|176
+2001|Arncliffe NSW 2205|Arncliffe|NSW|2205|181
+2006|Artarmon NSW 2064|Artarmon|NSW|2064|181
+2016|Ashfield NSW 2131|Ashfield|NSW|2131|325
+2015|Ashfield NSW 2131|Ashfield|NSW|2131|316
+2014|Ashfield NSW 2131|Ashfield|NSW|2131|364
+2013|Ashfield NSW 2131|Ashfield|NSW|2131|377
+2012|Ashfield NSW 2131|Ashfield|NSW|2131|402
+2011|Ashfield NSW 2131|Ashfield|NSW|2131|372
+2007|Ashfield NSW 2131|Ashfield|NSW|2131|319
+2006|Ashfield NSW 2131|Ashfield|NSW|2131|317
+2001|Ashfield NSW 2131|Ashfield|NSW|2131|257
+2016|Auburn NSW 2144|Auburn|NSW|2144|751
+2015|Auburn NSW 2144|Auburn|NSW|2144|740
+2014|Auburn NSW 2144|Auburn|NSW|2144|822
+2013|Auburn NSW 2144|Auburn|NSW|2144|817
+2012|Auburn NSW 2144|Auburn|NSW|2144|897
+2011|Auburn NSW 2144|Auburn|NSW|2144|818
+2007|Auburn NSW 2144|Auburn|NSW|2144|622
+2006|Auburn NSW 2144|Auburn|NSW|2144|684
+2001|Auburn NSW 2144|Auburn|NSW|2144|578
+2014|Balmain NSW 2041|Balmain|NSW|2041|212
+2013|Balmain NSW 2041|Balmain|NSW|2041|214
+2011|Balmain NSW 2041|Balmain|NSW|2041|203
+2007|Balmain NSW 2041|Balmain|NSW|2041|215
+2006|Balmain NSW 2041|Balmain|NSW|2041|180
+2001|Balmain NSW 2041|Balmain|NSW|2041|175
+2016|Bankstown NSW 2200|Bankstown|NSW|2200|640
+2015|Bankstown NSW 2200|Bankstown|NSW|2200|682
+2014|Bankstown NSW 2200|Bankstown|NSW|2200|719
+2013|Bankstown NSW 2200|Bankstown|NSW|2200|730
+2012|Bankstown NSW 2200|Bankstown|NSW|2200|721
+2011|Bankstown NSW 2200|Bankstown|NSW|2200|708
+2007|Bankstown NSW 2200|Bankstown|NSW|2200|715
+2006|Bankstown NSW 2200|Bankstown|NSW|2200|667
+2001|Bankstown NSW 2200|Bankstown|NSW|2200|567
+2016|Bathurst NSW 2795|Bathurst|NSW|2795|194
+2015|Bathurst NSW 2795|Bathurst|NSW|2795|211
+2014|Bathurst NSW 2795|Bathurst|NSW|2795|216
+2013|Bathurst NSW 2795|Bathurst|NSW|2795|215
+2012|Bathurst NSW 2795|Bathurst|NSW|2795|263
+2011|Bathurst NSW 2795|Bathurst|NSW|2795|262
+2007|Bathurst NSW 2795|Bathurst|NSW|2795|239
+2006|Bathurst NSW 2795|Bathurst|NSW|2795|280
+2001|Bathurst NSW 2795|Bathurst|NSW|2795|320
+2016|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|483
+2015|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|411
+2014|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|435
+2013|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|431
+2012|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|472
+2011|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|454
+2007|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|461
+2006|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|461
+2001|Baulkham Hills NSW 2153|Baulkham Hills|NSW|2153|426
+2016|Belmore NSW 2192|Belmore|NSW|2192|190
+2015|Belmore NSW 2192|Belmore|NSW|2192|201
+2014|Belmore NSW 2192|Belmore|NSW|2192|220
+2013|Belmore NSW 2192|Belmore|NSW|2192|220
+2012|Belmore NSW 2192|Belmore|NSW|2192|209
+2011|Belmore NSW 2192|Belmore|NSW|2192|189
+2007|Belmore NSW 2192|Belmore|NSW|2192|179
+2006|Belmore NSW 2192|Belmore|NSW|2192|204
+2001|Belmore NSW 2192|Belmore|NSW|2192|203
+2016|Bexley NSW 2207|Bexley|NSW|2207|255
+2015|Bexley NSW 2207|Bexley|NSW|2207|290
+2014|Bexley NSW 2207|Bexley|NSW|2207|287
+2013|Bexley NSW 2207|Bexley|NSW|2207|280
+2012|Bexley NSW 2207|Bexley|NSW|2207|328
+2011|Bexley NSW 2207|Bexley|NSW|2207|302
+2007|Bexley NSW 2207|Bexley|NSW|2207|275
+2006|Bexley NSW 2207|Bexley|NSW|2207|257
+2001|Bexley NSW 2207|Bexley|NSW|2207|267
+2016|Blacktown NSW 2148|Blacktown|NSW|2148|840
+2015|Blacktown NSW 2148|Blacktown|NSW|2148|784
+2014|Blacktown NSW 2148|Blacktown|NSW|2148|846
+2013|Blacktown NSW 2148|Blacktown|NSW|2148|823
+2012|Blacktown NSW 2148|Blacktown|NSW|2148|844
+2011|Blacktown NSW 2148|Blacktown|NSW|2148|849
+2007|Blacktown NSW 2148|Blacktown|NSW|2148|680
+2006|Blacktown NSW 2148|Blacktown|NSW|2148|693
+2001|Blacktown NSW 2148|Blacktown|NSW|2148|634
+2016|Bondi NSW 2026|Bondi|NSW|2026|189
+2015|Bondi NSW 2026|Bondi|NSW|2026|181
+2014|Bondi NSW 2026|Bondi|NSW|2026|244
+2013|Bondi NSW 2026|Bondi|NSW|2026|248
+2012|Bondi NSW 2026|Bondi|NSW|2026|248
+2011|Bondi NSW 2026|Bondi|NSW|2026|230
+2007|Bondi NSW 2026|Bondi|NSW|2026|241
+2006|Bondi NSW 2026|Bondi|NSW|2026|209
+2001|Bondi NSW 2026|Bondi|NSW|2026|204
+2014|Broken Hill NSW 2880|Broken Hill|NSW|2880|186
+2013|Broken Hill NSW 2880|Broken Hill|NSW|2880|180
+2012|Broken Hill NSW 2880|Broken Hill|NSW|2880|191
+2007|Broken Hill NSW 2880|Broken Hill|NSW|2880|197
+2006|Broken Hill NSW 2880|Broken Hill|NSW|2880|181
+2001|Broken Hill NSW 2880|Broken Hill|NSW|2880|245
+2016|Burwood NSW 2134|Burwood|NSW|2134|178
+2016|Cabramatta NSW 2166|Cabramatta|NSW|2166|274
+2015|Cabramatta NSW 2166|Cabramatta|NSW|2166|288
+2014|Cabramatta NSW 2166|Cabramatta|NSW|2166|343
+2013|Cabramatta NSW 2166|Cabramatta|NSW|2166|326
+2012|Cabramatta NSW 2166|Cabramatta|NSW|2166|396
+2011|Cabramatta NSW 2166|Cabramatta|NSW|2166|321
+2007|Cabramatta NSW 2166|Cabramatta|NSW|2166|384
+2006|Cabramatta NSW 2166|Cabramatta|NSW|2166|349
+2001|Cabramatta NSW 2166|Cabramatta|NSW|2166|441
+2016|Campsie NSW 2194|Campsie|NSW|2194|404
+2015|Campsie NSW 2194|Campsie|NSW|2194|353
+2014|Campsie NSW 2194|Campsie|NSW|2194|353
+2013|Campsie NSW 2194|Campsie|NSW|2194|357
+2012|Campsie NSW 2194|Campsie|NSW|2194|402
+2011|Campsie NSW 2194|Campsie|NSW|2194|346
+2007|Campsie NSW 2194|Campsie|NSW|2194|357
+2006|Campsie NSW 2194|Campsie|NSW|2194|328
+2001|Campsie NSW 2194|Campsie|NSW|2194|368
+2001|Canley Vale NSW 2166|Canley Vale|NSW|2166|174
+2016|Caringbah NSW 2229|Caringbah|NSW|2229|221
+2015|Caringbah NSW 2229|Caringbah|NSW|2229|218
+2014|Caringbah NSW 2229|Caringbah|NSW|2229|290
+2013|Caringbah NSW 2229|Caringbah|NSW|2229|295
+2012|Caringbah NSW 2229|Caringbah|NSW|2229|295
+2011|Caringbah NSW 2229|Caringbah|NSW|2229|277
+2007|Caringbah NSW 2229|Caringbah|NSW|2229|272
+2006|Caringbah NSW 2229|Caringbah|NSW|2229|275
+2001|Caringbah NSW 2229|Caringbah|NSW|2229|236
+2016|Carlingford NSW 2118|Carlingford|NSW|2118|270
+2015|Carlingford NSW 2118|Carlingford|NSW|2118|247
+2014|Carlingford NSW 2118|Carlingford|NSW|2118|241
+2013|Carlingford NSW 2118|Carlingford|NSW|2118|233
+2012|Carlingford NSW 2118|Carlingford|NSW|2118|217
+2011|Carlingford NSW 2118|Carlingford|NSW|2118|209
+2007|Carlingford NSW 2118|Carlingford|NSW|2118|184
+2006|Carlingford NSW 2118|Carlingford|NSW|2118|199
+2001|Carlingford NSW 2118|Carlingford|NSW|2118|190
+2016|Castle Hill NSW 2154|Castle Hill|NSW|2154|381
+2015|Castle Hill NSW 2154|Castle Hill|NSW|2154|360
+2014|Castle Hill NSW 2154|Castle Hill|NSW|2154|409
+2013|Castle Hill NSW 2154|Castle Hill|NSW|2154|401
+2012|Castle Hill NSW 2154|Castle Hill|NSW|2154|404
+2011|Castle Hill NSW 2154|Castle Hill|NSW|2154|406
+2007|Castle Hill NSW 2154|Castle Hill|NSW|2154|371
+2006|Castle Hill NSW 2154|Castle Hill|NSW|2154|390
+2001|Castle Hill NSW 2154|Castle Hill|NSW|2154|279
+2016|Casula NSW 2170|Casula|NSW|2170|234
+2015|Casula NSW 2170|Casula|NSW|2170|213
+2014|Casula NSW 2170|Casula|NSW|2170|219
+2013|Casula NSW 2170|Casula|NSW|2170|214
+2012|Casula NSW 2170|Casula|NSW|2170|230
+2011|Casula NSW 2170|Casula|NSW|2170|256
+2007|Casula NSW 2170|Casula|NSW|2170|235
+2006|Casula NSW 2170|Casula|NSW|2170|278
+2001|Casula NSW 2170|Casula|NSW|2170|172
+2016|Cessnock NSW 2325|Cessnock|NSW|2325|180
+2012|Cessnock NSW 2325|Cessnock|NSW|2325|213
+2011|Cessnock NSW 2325|Cessnock|NSW|2325|183
+2007|Cessnock NSW 2325|Cessnock|NSW|2325|187
+2001|Cessnock NSW 2325|Cessnock|NSW|2325|198
+2016|Charlestown NSW 2290|Charlestown|NSW|2290|196
+2015|Charlestown NSW 2290|Charlestown|NSW|2290|174
+2014|Charlestown NSW 2290|Charlestown|NSW|2290|201
+2013|Charlestown NSW 2290|Charlestown|NSW|2290|205
+2011|Charlestown NSW 2290|Charlestown|NSW|2290|191
+2016|Chatswood NSW 2067|Chatswood|NSW|2067|344
+2015|Chatswood NSW 2067|Chatswood|NSW|2067|292
+2014|Chatswood NSW 2067|Chatswood|NSW|2067|325
+2013|Chatswood NSW 2067|Chatswood|NSW|2067|321
+2012|Chatswood NSW 2067|Chatswood|NSW|2067|342
+2011|Chatswood NSW 2067|Chatswood|NSW|2067|280
+2007|Chatswood NSW 2067|Chatswood|NSW|2067|313
+2006|Chatswood NSW 2067|Chatswood|NSW|2067|307
+2001|Chatswood NSW 2067|Chatswood|NSW|2067|250
+2007|Cherrybrook NSW 2126|Cherrybrook|NSW|2126|179
+2006|Cherrybrook NSW 2126|Cherrybrook|NSW|2126|177
+2001|Cherrybrook NSW 2126|Cherrybrook|NSW|2126|174
+2014|Chester Hill NSW 2162|Chester Hill|NSW|2162|191
+2013|Chester Hill NSW 2162|Chester Hill|NSW|2162|191
+2011|Chester Hill NSW 2162|Chester Hill|NSW|2162|185
+2016|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|292
+2015|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|251
+2014|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|312
+2013|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|309
+2012|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|299
+2011|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|314
+2007|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|297
+2006|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|295
+2001|Coffs Harbour NSW 2450|Coffs Harbour|NSW|2450|269
+2006|Concord NSW 2137|Concord|NSW|2137|199
+2001|Concord NSW 2137|Concord|NSW|2137|170
+2016|Condell Park NSW 2200|Condell Park|NSW|2200|179
+2015|Condell Park NSW 2200|Condell Park|NSW|2200|181
+2014|Condell Park NSW 2200|Condell Park|NSW|2200|201
+2013|Condell Park NSW 2200|Condell Park|NSW|2200|198
+2012|Condell Park NSW 2200|Condell Park|NSW|2200|198
+2016|Coogee NSW 2034|Coogee|NSW|2034|235
+2015|Coogee NSW 2034|Coogee|NSW|2034|257
+2014|Coogee NSW 2034|Coogee|NSW|2034|299
+2013|Coogee NSW 2034|Coogee|NSW|2034|296
+2012|Coogee NSW 2034|Coogee|NSW|2034|291
+2011|Coogee NSW 2034|Coogee|NSW|2034|278
+2007|Coogee NSW 2034|Coogee|NSW|2034|286
+2006|Coogee NSW 2034|Coogee|NSW|2034|215
+2001|Coogee NSW 2034|Coogee|NSW|2034|250
+2016|Cranebrook NSW 2749|Cranebrook|NSW|2749|249
+2015|Cranebrook NSW 2749|Cranebrook|NSW|2749|269
+2014|Cranebrook NSW 2749|Cranebrook|NSW|2749|265
+2013|Cranebrook NSW 2749|Cranebrook|NSW|2749|257
+2012|Cranebrook NSW 2749|Cranebrook|NSW|2749|267
+2011|Cranebrook NSW 2749|Cranebrook|NSW|2749|236
+2007|Cranebrook NSW 2749|Cranebrook|NSW|2749|247
+2006|Cranebrook NSW 2749|Cranebrook|NSW|2749|242
+2001|Cranebrook NSW 2749|Cranebrook|NSW|2749|200
+2016|Cremorne NSW 2090|Cremorne|NSW|2090|177
+2013|Cremorne NSW 2090|Cremorne|NSW|2090|189
+2011|Cremorne NSW 2090|Cremorne|NSW|2090|201
+2007|Cremorne NSW 2090|Cremorne|NSW|2090|181
+2006|Cremorne NSW 2090|Cremorne|NSW|2090|172
+2016|Cronulla NSW 2230|Cronulla|NSW|2230|257
+2015|Cronulla NSW 2230|Cronulla|NSW|2230|245
+2014|Cronulla NSW 2230|Cronulla|NSW|2230|269
+2013|Cronulla NSW 2230|Cronulla|NSW|2230|275
+2012|Cronulla NSW 2230|Cronulla|NSW|2230|253
+2011|Cronulla NSW 2230|Cronulla|NSW|2230|271
+2007|Cronulla NSW 2230|Cronulla|NSW|2230|271
+2006|Cronulla NSW 2230|Cronulla|NSW|2230|259
+2001|Cronulla NSW 2230|Cronulla|NSW|2230|254
+2001|Dapto NSW 2530|Dapto|NSW|2530|174
+2016|Dee Why NSW 2099|Dee Why|NSW|2099|401
+2015|Dee Why NSW 2099|Dee Why|NSW|2099|364
+2014|Dee Why NSW 2099|Dee Why|NSW|2099|423
+2013|Dee Why NSW 2099|Dee Why|NSW|2099|415
+2012|Dee Why NSW 2099|Dee Why|NSW|2099|429
+2011|Dee Why NSW 2099|Dee Why|NSW|2099|361
+2007|Dee Why NSW 2099|Dee Why|NSW|2099|375
+2006|Dee Why NSW 2099|Dee Why|NSW|2099|375
+2001|Dee Why NSW 2099|Dee Why|NSW|2099|288
+2015|Doonside NSW 2767|Doonside|NSW|2767|191
+2014|Doonside NSW 2767|Doonside|NSW|2767|203
+2013|Doonside NSW 2767|Doonside|NSW|2767|198
+2012|Doonside NSW 2767|Doonside|NSW|2767|198
+2007|Doonside NSW 2767|Doonside|NSW|2767|203
+2006|Doonside NSW 2767|Doonside|NSW|2767|188
+2001|Doonside NSW 2767|Doonside|NSW|2767|207
+2015|Drummoyne NSW 2047|Drummoyne|NSW|2047|183
+2013|Drummoyne NSW 2047|Drummoyne|NSW|2047|180
+2012|Drummoyne NSW 2047|Drummoyne|NSW|2047|183
+2011|Drummoyne NSW 2047|Drummoyne|NSW|2047|202
+2006|Drummoyne NSW 2047|Drummoyne|NSW|2047|189
+2016|Dubbo NSW 2830|Dubbo|NSW|2830|551
+2015|Dubbo NSW 2830|Dubbo|NSW|2830|522
+2014|Dubbo NSW 2830|Dubbo|NSW|2830|579
+2013|Dubbo NSW 2830|Dubbo|NSW|2830|559
+2012|Dubbo NSW 2830|Dubbo|NSW|2830|562
+2011|Dubbo NSW 2830|Dubbo|NSW|2830|565
+2007|Dubbo NSW 2830|Dubbo|NSW|2830|495
+2006|Dubbo NSW 2830|Dubbo|NSW|2830|551
+2001|Dubbo NSW 2830|Dubbo|NSW|2830|576
+2015|Dulwich Hill NSW 2203|Dulwich Hill|NSW|2203|176
+2014|Dulwich Hill NSW 2203|Dulwich Hill|NSW|2203|215
+2013|Dulwich Hill NSW 2203|Dulwich Hill|NSW|2203|219
+2012|Dulwich Hill NSW 2203|Dulwich Hill|NSW|2203|224
+2011|Dulwich Hill NSW 2203|Dulwich Hill|NSW|2203|242
+2007|Dulwich Hill NSW 2203|Dulwich Hill|NSW|2203|250
+2006|Dulwich Hill NSW 2203|Dulwich Hill|NSW|2203|234
+2001|Dulwich Hill NSW 2203|Dulwich Hill|NSW|2203|258
+2016|Earlwood NSW 2206|Earlwood|NSW|2206|194
+2015|Earlwood NSW 2206|Earlwood|NSW|2206|186
+2014|Earlwood NSW 2206|Earlwood|NSW|2206|190
+2013|Earlwood NSW 2206|Earlwood|NSW|2206|193
+2011|Earlwood NSW 2206|Earlwood|NSW|2206|197
+2007|Earlwood NSW 2206|Earlwood|NSW|2206|197
+2006|Earlwood NSW 2206|Earlwood|NSW|2206|211
+2001|Earlwood NSW 2206|Earlwood|NSW|2206|213
+2016|Eastwood NSW 2122|Eastwood|NSW|2122|222
+2014|Eastwood NSW 2122|Eastwood|NSW|2122|202
+2013|Eastwood NSW 2122|Eastwood|NSW|2122|210
+2012|Eastwood NSW 2122|Eastwood|NSW|2122|206
+2007|Eastwood NSW 2122|Eastwood|NSW|2122|184
+2001|Eastwood NSW 2122|Eastwood|NSW|2122|198
+2001|Edgeworth NSW 2285|Edgeworth|NSW|2285|168
+2016|Engadine NSW 2233|Engadine|NSW|2233|222
+2015|Engadine NSW 2233|Engadine|NSW|2233|209
+2014|Engadine NSW 2233|Engadine|NSW|2233|251
+2013|Engadine NSW 2233|Engadine|NSW|2233|240
+2012|Engadine NSW 2233|Engadine|NSW|2233|292
+2011|Engadine NSW 2233|Engadine|NSW|2233|287
+2007|Engadine NSW 2233|Engadine|NSW|2233|292
+2006|Engadine NSW 2233|Engadine|NSW|2233|284
+2001|Engadine NSW 2233|Engadine|NSW|2233|251
+2016|Epping NSW 2121|Epping|NSW|2121|245
+2015|Epping NSW 2121|Epping|NSW|2121|205
+2014|Epping NSW 2121|Epping|NSW|2121|235
+2013|Epping NSW 2121|Epping|NSW|2121|234
+2012|Epping NSW 2121|Epping|NSW|2121|226
+2011|Epping NSW 2121|Epping|NSW|2121|208
+2007|Epping NSW 2121|Epping|NSW|2121|190
+2006|Epping NSW 2121|Epping|NSW|2121|214
+2001|Epping NSW 2121|Epping|NSW|2121|189
+2015|Ermington NSW 2115|Ermington|NSW|2115|185
+2016|Fairfield NSW 2165|Fairfield|NSW|2165|278
+2015|Fairfield NSW 2165|Fairfield|NSW|2165|300
+2014|Fairfield NSW 2165|Fairfield|NSW|2165|377
+2013|Fairfield NSW 2165|Fairfield|NSW|2165|344
+2012|Fairfield NSW 2165|Fairfield|NSW|2165|378
+2011|Fairfield NSW 2165|Fairfield|NSW|2165|344
+2007|Fairfield NSW 2165|Fairfield|NSW|2165|406
+2006|Fairfield NSW 2165|Fairfield|NSW|2165|365
+2001|Fairfield NSW 2165|Fairfield|NSW|2165|321
+2007|Frenchs Forest NSW 2086|Frenchs Forest|NSW|2086|192
+2012|Freshwater NSW 2096|Freshwater|NSW|2096|192
+2007|Gladesville NSW 2111|Gladesville|NSW|2111|184
+2016|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|353
+2015|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|334
+2014|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|287
+2013|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|272
+2012|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|295
+2011|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|318
+2007|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|337
+2006|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|351
+2001|Glenmore Park NSW 2745|Glenmore Park|NSW|2745|368
+2016|Glenwood NSW 2768|Glenwood|NSW|2768|177
+2015|Glenwood NSW 2768|Glenwood|NSW|2768|191
+2014|Glenwood NSW 2768|Glenwood|NSW|2768|206
+2013|Glenwood NSW 2768|Glenwood|NSW|2768|207
+2012|Glenwood NSW 2768|Glenwood|NSW|2768|221
+2011|Glenwood NSW 2768|Glenwood|NSW|2768|218
+2007|Glenwood NSW 2768|Glenwood|NSW|2768|269
+2006|Glenwood NSW 2768|Glenwood|NSW|2768|275
+2001|Glenwood NSW 2768|Glenwood|NSW|2768|215
+2016|Goulburn NSW 2580|Goulburn|NSW|2580|228
+2015|Goulburn NSW 2580|Goulburn|NSW|2580|217
+2014|Goulburn NSW 2580|Goulburn|NSW|2580|235
+2013|Goulburn NSW 2580|Goulburn|NSW|2580|224
+2012|Goulburn NSW 2580|Goulburn|NSW|2580|250
+2011|Goulburn NSW 2580|Goulburn|NSW|2580|250
+2007|Goulburn NSW 2580|Goulburn|NSW|2580|219
+2006|Goulburn NSW 2580|Goulburn|NSW|2580|244
+2001|Goulburn NSW 2580|Goulburn|NSW|2580|274
+2016|Granville NSW 2142|Granville|NSW|2142|330
+2015|Granville NSW 2142|Granville|NSW|2142|328
+2014|Granville NSW 2142|Granville|NSW|2142|345
+2013|Granville NSW 2142|Granville|NSW|2142|353
+2012|Granville NSW 2142|Granville|NSW|2142|331
+2011|Granville NSW 2142|Granville|NSW|2142|374
+2007|Granville NSW 2142|Granville|NSW|2142|295
+2006|Granville NSW 2142|Granville|NSW|2142|321
+2001|Granville NSW 2142|Granville|NSW|2142|248
+2006|Green Valley NSW 2168|Green Valley|NSW|2168|199
+2001|Green Valley NSW 2168|Green Valley|NSW|2168|169
+2016|Greenacre NSW 2190|Greenacre|NSW|2190|345
+2015|Greenacre NSW 2190|Greenacre|NSW|2190|352
+2014|Greenacre NSW 2190|Greenacre|NSW|2190|381
+2013|Greenacre NSW 2190|Greenacre|NSW|2190|375
+2012|Greenacre NSW 2190|Greenacre|NSW|2190|379
+2011|Greenacre NSW 2190|Greenacre|NSW|2190|382
+2007|Greenacre NSW 2190|Greenacre|NSW|2190|359
+2006|Greenacre NSW 2190|Greenacre|NSW|2190|403
+2001|Greenacre NSW 2190|Greenacre|NSW|2190|300
+2016|Greystanes NSW 2145|Greystanes|NSW|2145|281
+2015|Greystanes NSW 2145|Greystanes|NSW|2145|311
+2014|Greystanes NSW 2145|Greystanes|NSW|2145|329
+2013|Greystanes NSW 2145|Greystanes|NSW|2145|330
+2012|Greystanes NSW 2145|Greystanes|NSW|2145|325
+2011|Greystanes NSW 2145|Greystanes|NSW|2145|335
+2007|Greystanes NSW 2145|Greystanes|NSW|2145|318
+2006|Greystanes NSW 2145|Greystanes|NSW|2145|304
+2001|Greystanes NSW 2145|Greystanes|NSW|2145|269
+2016|Griffith NSW 2680|Griffith|NSW|2680|245
+2015|Griffith NSW 2680|Griffith|NSW|2680|264
+2014|Griffith NSW 2680|Griffith|NSW|2680|271
+2013|Griffith NSW 2680|Griffith|NSW|2680|266
+2012|Griffith NSW 2680|Griffith|NSW|2680|309
+2011|Griffith NSW 2680|Griffith|NSW|2680|240
+2007|Griffith NSW 2680|Griffith|NSW|2680|280
+2006|Griffith NSW 2680|Griffith|NSW|2680|252
+2001|Griffith NSW 2680|Griffith|NSW|2680|294
+2016|Guildford NSW 2161|Guildford|NSW|2161|493
+2015|Guildford NSW 2161|Guildford|NSW|2161|473
+2014|Guildford NSW 2161|Guildford|NSW|2161|498
+2013|Guildford NSW 2161|Guildford|NSW|2161|503
+2012|Guildford NSW 2161|Guildford|NSW|2161|545
+2011|Guildford NSW 2161|Guildford|NSW|2161|504
+2007|Guildford NSW 2161|Guildford|NSW|2161|420
+2006|Guildford NSW 2161|Guildford|NSW|2161|427
+2001|Guildford NSW 2161|Guildford|NSW|2161|394
+2007|Harbord NSW 2096|Harbord|NSW|2096|184
+2006|Harbord NSW 2096|Harbord|NSW|2096|176
+2007|Hinchinbrook NSW 2168|Hinchinbrook|NSW|2168|184
+2006|Hinchinbrook NSW 2168|Hinchinbrook|NSW|2168|188
+2001|Hinchinbrook NSW 2168|Hinchinbrook|NSW|2168|209
+2016|Homebush West NSW 2140|Homebush West|NSW|2140|178
+2016|Hornsby NSW 2077|Hornsby|NSW|2077|360
+2015|Hornsby NSW 2077|Hornsby|NSW|2077|314
+2014|Hornsby NSW 2077|Hornsby|NSW|2077|332
+2013|Hornsby NSW 2077|Hornsby|NSW|2077|335
+2012|Hornsby NSW 2077|Hornsby|NSW|2077|376
+2011|Hornsby NSW 2077|Hornsby|NSW|2077|371
+2007|Hornsby NSW 2077|Hornsby|NSW|2077|293
+2006|Hornsby NSW 2077|Hornsby|NSW|2077|300
+2001|Hornsby NSW 2077|Hornsby|NSW|2077|260
+2016|Hurstville NSW 2220|Hurstville|NSW|2220|425
+2015|Hurstville NSW 2220|Hurstville|NSW|2220|336
+2014|Hurstville NSW 2220|Hurstville|NSW|2220|453
+2013|Hurstville NSW 2220|Hurstville|NSW|2220|447
+2012|Hurstville NSW 2220|Hurstville|NSW|2220|481
+2011|Hurstville NSW 2220|Hurstville|NSW|2220|407
+2007|Hurstville NSW 2220|Hurstville|NSW|2220|366
+2006|Hurstville NSW 2220|Hurstville|NSW|2220|323
+2001|Hurstville NSW 2220|Hurstville|NSW|2220|335
+2016|Ingleburn NSW 2565|Ingleburn|NSW|2565|220
+2015|Ingleburn NSW 2565|Ingleburn|NSW|2565|196
+2014|Ingleburn NSW 2565|Ingleburn|NSW|2565|222
+2013|Ingleburn NSW 2565|Ingleburn|NSW|2565|217
+2012|Ingleburn NSW 2565|Ingleburn|NSW|2565|220
+2011|Ingleburn NSW 2565|Ingleburn|NSW|2565|209
+2007|Ingleburn NSW 2565|Ingleburn|NSW|2565|215
+2006|Ingleburn NSW 2565|Ingleburn|NSW|2565|183
+2001|Ingleburn NSW 2565|Ingleburn|NSW|2565|209
+2001|Inverell NSW 2360|Inverell|NSW|2360|168
+2016|Kellyville NSW 2155|Kellyville|NSW|2155|352
+2015|Kellyville NSW 2155|Kellyville|NSW|2155|344
+2014|Kellyville NSW 2155|Kellyville|NSW|2155|271
+2013|Kellyville NSW 2155|Kellyville|NSW|2155|262
+2012|Kellyville NSW 2155|Kellyville|NSW|2155|245
+2011|Kellyville NSW 2155|Kellyville|NSW|2155|249
+2007|Kellyville NSW 2155|Kellyville|NSW|2155|351
+2006|Kellyville NSW 2155|Kellyville|NSW|2155|350
+2001|Kellyville NSW 2155|Kellyville|NSW|2155|285
+2015|Kellyville Ridge NSW 2155|Kellyville Ridge|NSW|2155|178
+2014|Kellyville Ridge NSW 2155|Kellyville Ridge|NSW|2155|222
+2013|Kellyville Ridge NSW 2155|Kellyville Ridge|NSW|2155|224
+2012|Kellyville Ridge NSW 2155|Kellyville Ridge|NSW|2155|208
+2011|Kellyville Ridge NSW 2155|Kellyville Ridge|NSW|2155|211
+2011|Kingsford NSW 2032|Kingsford|NSW|2032|181
+2016|Kogarah NSW 2217|Kogarah|NSW|2217|282
+2015|Kogarah NSW 2217|Kogarah|NSW|2217|257
+2014|Kogarah NSW 2217|Kogarah|NSW|2217|285
+2013|Kogarah NSW 2217|Kogarah|NSW|2217|284
+2012|Kogarah NSW 2217|Kogarah|NSW|2217|286
+2011|Kogarah NSW 2217|Kogarah|NSW|2217|255
+2007|Kogarah NSW 2217|Kogarah|NSW|2217|215
+2006|Kogarah NSW 2217|Kogarah|NSW|2217|224
+2001|Kogarah NSW 2217|Kogarah|NSW|2217|218
+2016|Lakemba NSW 2195|Lakemba|NSW|2195|415
+2015|Lakemba NSW 2195|Lakemba|NSW|2195|390
+2014|Lakemba NSW 2195|Lakemba|NSW|2195|432
+2013|Lakemba NSW 2195|Lakemba|NSW|2195|429
+2012|Lakemba NSW 2195|Lakemba|NSW|2195|450
+2011|Lakemba NSW 2195|Lakemba|NSW|2195|457
+2007|Lakemba NSW 2195|Lakemba|NSW|2195|392
+2006|Lakemba NSW 2195|Lakemba|NSW|2195|430
+2001|Lakemba NSW 2195|Lakemba|NSW|2195|427
+2016|Lane Cove NSW 2066|Lane Cove|NSW|2066|250
+2015|Lane Cove NSW 2066|Lane Cove|NSW|2066|224
+2014|Lane Cove NSW 2066|Lane Cove|NSW|2066|256
+2013|Lane Cove NSW 2066|Lane Cove|NSW|2066|243
+2012|Lane Cove NSW 2066|Lane Cove|NSW|2066|311
+2011|Lane Cove NSW 2066|Lane Cove|NSW|2066|298
+2007|Lane Cove NSW 2066|Lane Cove|NSW|2066|321
+2006|Lane Cove NSW 2066|Lane Cove|NSW|2066|339
+2001|Lane Cove NSW 2066|Lane Cove|NSW|2066|268
+2016|Leichhardt NSW 2040|Leichhardt|NSW|2040|234
+2015|Leichhardt NSW 2040|Leichhardt|NSW|2040|233
+2014|Leichhardt NSW 2040|Leichhardt|NSW|2040|306
+2013|Leichhardt NSW 2040|Leichhardt|NSW|2040|300
+2012|Leichhardt NSW 2040|Leichhardt|NSW|2040|280
+2011|Leichhardt NSW 2040|Leichhardt|NSW|2040|332
+2007|Leichhardt NSW 2040|Leichhardt|NSW|2040|277
+2006|Leichhardt NSW 2040|Leichhardt|NSW|2040|289
+2001|Leichhardt NSW 2040|Leichhardt|NSW|2040|227
+2016|Lidcombe NSW 2141|Lidcombe|NSW|2141|284
+2015|Lidcombe NSW 2141|Lidcombe|NSW|2141|289
+2014|Lidcombe NSW 2141|Lidcombe|NSW|2141|314
+2013|Lidcombe NSW 2141|Lidcombe|NSW|2141|310
+2012|Lidcombe NSW 2141|Lidcombe|NSW|2141|326
+2011|Lidcombe NSW 2141|Lidcombe|NSW|2141|301
+2007|Lidcombe NSW 2141|Lidcombe|NSW|2141|258
+2006|Lidcombe NSW 2141|Lidcombe|NSW|2141|221
+2001|Lidcombe NSW 2141|Lidcombe|NSW|2141|200
+2016|Liverpool NSW 2170|Liverpool|NSW|2170|483
+2015|Liverpool NSW 2170|Liverpool|NSW|2170|476
+2014|Liverpool NSW 2170|Liverpool|NSW|2170|529
+2013|Liverpool NSW 2170|Liverpool|NSW|2170|528
+2012|Liverpool NSW 2170|Liverpool|NSW|2170|501
+2011|Liverpool NSW 2170|Liverpool|NSW|2170|514
+2007|Liverpool NSW 2170|Liverpool|NSW|2170|426
+2006|Liverpool NSW 2170|Liverpool|NSW|2170|485
+2001|Liverpool NSW 2170|Liverpool|NSW|2170|423
+2012|Macquarie NSW 2444|Macquarie|NSW|2444|183
+2011|Macquarie NSW 2444|Macquarie|NSW|2444|206
+2007|Macquarie NSW 2444|Macquarie|NSW|2444|188
+2006|Macquarie NSW 2444|Macquarie|NSW|2444|213
+2001|Macquarie NSW 2444|Macquarie|NSW|2444|210
+2016|Macquarie Fields NSW 2564|Macquarie Fields|NSW|2564|177
+2014|Macquarie Fields NSW 2564|Macquarie Fields|NSW|2564|190
+2016|Manly NSW 2095|Manly|NSW|2095|264
+2015|Manly NSW 2095|Manly|NSW|2095|268
+2014|Manly NSW 2095|Manly|NSW|2095|306
+2013|Manly NSW 2095|Manly|NSW|2095|307
+2012|Manly NSW 2095|Manly|NSW|2095|311
+2011|Manly NSW 2095|Manly|NSW|2095|286
+2007|Manly NSW 2095|Manly|NSW|2095|243
+2006|Manly NSW 2095|Manly|NSW|2095|253
+2001|Manly NSW 2095|Manly|NSW|2095|197
+2016|Maroubra NSW 2035|Maroubra|NSW|2035|403
+2015|Maroubra NSW 2035|Maroubra|NSW|2035|376
+2014|Maroubra NSW 2035|Maroubra|NSW|2035|438
+2013|Maroubra NSW 2035|Maroubra|NSW|2035|442
+2012|Maroubra NSW 2035|Maroubra|NSW|2035|477
+2011|Maroubra NSW 2035|Maroubra|NSW|2035|443
+2007|Maroubra NSW 2035|Maroubra|NSW|2035|393
+2006|Maroubra NSW 2035|Maroubra|NSW|2035|315
+2001|Maroubra NSW 2035|Maroubra|NSW|2035|283
+2016|Marrickville NSW 2204|Marrickville|NSW|2204|348
+2015|Marrickville NSW 2204|Marrickville|NSW|2204|376
+2014|Marrickville NSW 2204|Marrickville|NSW|2204|401
+2013|Marrickville NSW 2204|Marrickville|NSW|2204|387
+2012|Marrickville NSW 2204|Marrickville|NSW|2204|414
+2011|Marrickville NSW 2204|Marrickville|NSW|2204|408
+2007|Marrickville NSW 2204|Marrickville|NSW|2204|392
+2006|Marrickville NSW 2204|Marrickville|NSW|2204|371
+2001|Marrickville NSW 2204|Marrickville|NSW|2204|356
+2014|Marsfield NSW 2122|Marsfield|NSW|2122|203
+2013|Marsfield NSW 2122|Marsfield|NSW|2122|199
+2016|Mascot NSW 2020|Mascot|NSW|2020|254
+2015|Mascot NSW 2020|Mascot|NSW|2020|198
+2014|Mascot NSW 2020|Mascot|NSW|2020|207
+2013|Mascot NSW 2020|Mascot|NSW|2020|203
+2012|Mascot NSW 2020|Mascot|NSW|2020|195
+2006|Mayfield NSW 2540|Mayfield|NSW|2540|176
+2001|Menai NSW 2234|Menai|NSW|2234|179
+2016|Merrylands NSW 2160|Merrylands|NSW|2160|601
+2015|Merrylands NSW 2160|Merrylands|NSW|2160|567
+2014|Merrylands NSW 2160|Merrylands|NSW|2160|648
+2013|Merrylands NSW 2160|Merrylands|NSW|2160|621
+2012|Merrylands NSW 2160|Merrylands|NSW|2160|681
+2011|Merrylands NSW 2160|Merrylands|NSW|2160|644
+2007|Merrylands NSW 2160|Merrylands|NSW|2160|591
+2006|Merrylands NSW 2160|Merrylands|NSW|2160|526
+2001|Merrylands NSW 2160|Merrylands|NSW|2160|520
+2016|Minto NSW 2566|Minto|NSW|2566|176
+2015|Minto NSW 2566|Minto|NSW|2566|192
+2007|Minto NSW 2566|Minto|NSW|2566|181
+2006|Minto NSW 2566|Minto|NSW|2566|210
+2001|Minto NSW 2566|Minto|NSW|2566|216
+2016|Miranda NSW 2228|Miranda|NSW|2228|199
+2015|Miranda NSW 2228|Miranda|NSW|2228|222
+2014|Miranda NSW 2228|Miranda|NSW|2228|205
+2013|Miranda NSW 2228|Miranda|NSW|2228|204
+2012|Miranda NSW 2228|Miranda|NSW|2228|217
+2011|Miranda NSW 2228|Miranda|NSW|2228|215
+2007|Miranda NSW 2228|Miranda|NSW|2228|222
+2006|Miranda NSW 2228|Miranda|NSW|2228|218
+2001|Miranda NSW 2228|Miranda|NSW|2228|201
+2016|Moorebank NSW 2170|Moorebank|NSW|2170|215
+2001|Moree NSW 2400|Moree|NSW|2400|195
+2016|Mosman NSW 2088|Mosman|NSW|2088|326
+2015|Mosman NSW 2088|Mosman|NSW|2088|313
+2014|Mosman NSW 2088|Mosman|NSW|2088|343
+2013|Mosman NSW 2088|Mosman|NSW|2088|351
+2012|Mosman NSW 2088|Mosman|NSW|2088|341
+2011|Mosman NSW 2088|Mosman|NSW|2088|369
+2007|Mosman NSW 2088|Mosman|NSW|2088|347
+2006|Mosman NSW 2088|Mosman|NSW|2088|355
+2001|Mosman NSW 2088|Mosman|NSW|2088|333
+2016|Mount Druitt NSW 2770|Mount Druitt|NSW|2770|238
+2015|Mount Druitt NSW 2770|Mount Druitt|NSW|2770|239
+2014|Mount Druitt NSW 2770|Mount Druitt|NSW|2770|190
+2013|Mount Druitt NSW 2770|Mount Druitt|NSW|2770|186
+2011|Mount Druitt NSW 2770|Mount Druitt|NSW|2770|214
+2007|Mount Druitt NSW 2770|Mount Druitt|NSW|2770|285
+2001|Mt Druitt NSW 2770|Mt Druitt|NSW|2770|183
+2015|Mudgee NSW 2850|Mudgee|NSW|2850|186
+2014|Mudgee NSW 2850|Mudgee|NSW|2850|190
+2012|Mudgee NSW 2850|Mudgee|NSW|2850|191
+2006|Mudgee NSW 2850|Mudgee|NSW|2850|174
+2016|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|177
+2015|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|206
+2014|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|200
+2013|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|192
+2012|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|201
+2011|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|226
+2007|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|188
+2006|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|205
+2001|Muswellbrook NSW 2333|Muswellbrook|NSW|2333|174
+2015|Neutral Bay NSW 2089|Neutral Bay|NSW|2089|194
+2014|Neutral Bay NSW 2089|Neutral Bay|NSW|2089|190
+2013|Neutral Bay NSW 2089|Neutral Bay|NSW|2089|191
+2012|Neutral Bay NSW 2089|Neutral Bay|NSW|2089|210
+2011|Neutral Bay NSW 2089|Neutral Bay|NSW|2089|196
+2007|Neutral Bay NSW 2089|Neutral Bay|NSW|2089|180
+2015|Newtown NSW 2042|Newtown|NSW|2042|176
+2012|Newtown NSW 2042|Newtown|NSW|2042|199
+2011|Newtown NSW 2042|Newtown|NSW|2042|189
+2007|Newtown NSW 2042|Newtown|NSW|2042|206
+2006|Newtown NSW 2042|Newtown|NSW|2042|231
+2014|North Parramatta NSW 2151|North Parramatta|NSW|2151|202
+2013|North Parramatta NSW 2151|North Parramatta|NSW|2151|189
+2012|North Parramatta NSW 2151|North Parramatta|NSW|2151|259
+2011|North Parramatta NSW 2151|North Parramatta|NSW|2151|205
+2007|North Parramatta NSW 2151|North Parramatta|NSW|2151|184
+2016|North Parramatta NSW 2151|North Parramatta|NSW|2151|207
+2015|North Parramatta NSW 2151|North Parramatta|NSW|2151|222
+2012|Northmead NSW 2152|Northmead|NSW|2152|207
+2016|Orange NSW 2800|Orange|NSW|2800|559
+2015|Orange NSW 2800|Orange|NSW|2800|550
+2014|Orange NSW 2800|Orange|NSW|2800|588
+2013|Orange NSW 2800|Orange|NSW|2800|576
+2012|Orange NSW 2800|Orange|NSW|2800|597
+2011|Orange NSW 2800|Orange|NSW|2800|580
+2007|Orange NSW 2800|Orange|NSW|2800|532
+2006|Orange NSW 2800|Orange|NSW|2800|537
+2001|Orange NSW 2800|Orange|NSW|2800|513
+2015|Paddington NSW 2021|Paddington|NSW|2021|190
+2014|Paddington NSW 2021|Paddington|NSW|2021|202
+2013|Paddington NSW 2021|Paddington|NSW|2021|205
+2012|Paddington NSW 2021|Paddington|NSW|2021|192
+2011|Paddington NSW 2021|Paddington|NSW|2021|215
+2007|Paddington NSW 2021|Paddington|NSW|2021|180
+2006|Paddington NSW 2021|Paddington|NSW|2021|189
+2014|Padstow NSW 2211|Padstow|NSW|2211|192
+2013|Padstow NSW 2211|Padstow|NSW|2211|196
+2012|Padstow NSW 2211|Padstow|NSW|2211|197
+2006|Padstow NSW 2211|Padstow|NSW|2211|179
+2016|Panania NSW 2213|Panania|NSW|2213|193
+2007|Panania NSW 2213|Panania|NSW|2213|179
+2016|Parramatta NSW 2150|Parramatta|NSW|2150|509
+2015|Parramatta NSW 2150|Parramatta|NSW|2150|534
+2014|Parramatta NSW 2150|Parramatta|NSW|2150|524
+2013|Parramatta NSW 2150|Parramatta|NSW|2150|529
+2012|Parramatta NSW 2150|Parramatta|NSW|2150|490
+2011|Parramatta NSW 2150|Parramatta|NSW|2150|451
+2007|Parramatta NSW 2150|Parramatta|NSW|2150|361
+2006|Parramatta NSW 2150|Parramatta|NSW|2150|321
+2001|Parramatta NSW 2150|Parramatta|NSW|2150|253
+2016|Penrith NSW 2750|Penrith|NSW|2750|209
+2014|Penrith NSW 2750|Penrith|NSW|2750|201
+2013|Penrith NSW 2750|Penrith|NSW|2750|190
+2012|Penrith NSW 2750|Penrith|NSW|2750|192
+2007|Penrith NSW 2750|Penrith|NSW|2750|182
+2006|Penrith NSW 2750|Penrith|NSW|2750|195
+2001|Penrith NSW 2750|Penrith|NSW|2750|201
+2016|Penshurst NSW 2222|Penshurst|NSW|2222|177
+2012|Penshurst NSW 2222|Penshurst|NSW|2222|198
+2011|Penshurst NSW 2222|Penshurst|NSW|2222|190
+2007|Penshurst NSW 2222|Penshurst|NSW|2222|190
+2016|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|360
+2015|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|378
+2014|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|466
+2013|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|443
+2012|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|452
+2011|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|420
+2007|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|396
+2006|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|401
+2001|Port Macquarie NSW 2444|Port Macquarie|NSW|2444|383
+2016|Prestons NSW 2170|Prestons|NSW|2170|190
+2015|Prestons NSW 2170|Prestons|NSW|2170|197
+2014|Prestons NSW 2170|Prestons|NSW|2170|225
+2013|Prestons NSW 2170|Prestons|NSW|2170|225
+2012|Prestons NSW 2170|Prestons|NSW|2170|239
+2011|Prestons NSW 2170|Prestons|NSW|2170|245
+2007|Prestons NSW 2170|Prestons|NSW|2170|235
+2006|Prestons NSW 2170|Prestons|NSW|2170|262
+2001|Prestons NSW 2170|Prestons|NSW|2170|218
+2016|Punchbowl NSW 2196|Punchbowl|NSW|2196|395
+2015|Punchbowl NSW 2196|Punchbowl|NSW|2196|348
+2014|Punchbowl NSW 2196|Punchbowl|NSW|2196|367
+2013|Punchbowl NSW 2196|Punchbowl|NSW|2196|369
+2012|Punchbowl NSW 2196|Punchbowl|NSW|2196|368
+2011|Punchbowl NSW 2196|Punchbowl|NSW|2196|387
+2007|Punchbowl NSW 2196|Punchbowl|NSW|2196|332
+2006|Punchbowl NSW 2196|Punchbowl|NSW|2196|384
+2001|Punchbowl NSW 2196|Punchbowl|NSW|2196|374
+2015|Pyrmont NSW 2009|Pyrmont|NSW|2009|190
+2016|Quakers Hill NSW 2763|Quakers Hill|NSW|2763|422
+2015|Quakers Hill NSW 2763|Quakers Hill|NSW|2763|424
+2014|Quakers Hill NSW 2763|Quakers Hill|NSW|2763|453
+2013|Quakers Hill NSW 2763|Quakers Hill|NSW|2763|459
+2012|Quakers Hill NSW 2763|Quakers Hill|NSW|2763|464
+2011|Quakers Hill NSW 2763|Quakers Hill|NSW|2763|491
+2006|Quakers Hill NSW 2763|Quakers Hill|NSW|2763|493
+2001|Quakers Hill NSW 2763|Quakers Hill|NSW|2763|446
+2007|Quakers Hills NSW 2763|Quakers Hills|NSW|2763|459
+2014|Queanbeyan NSW 2620|Queanbeyan|NSW|2620|186
+2006|Queanbeyan NSW 2620|Queanbeyan|NSW|2620|173
+2001|Queanbeyan NSW 2620|Queanbeyan|NSW|2620|237
+2016|Randwick NSW 2031|Randwick|NSW|2031|478
+2015|Randwick NSW 2031|Randwick|NSW|2031|467
+2014|Randwick NSW 2031|Randwick|NSW|2031|473
+2013|Randwick NSW 2031|Randwick|NSW|2031|475
+2012|Randwick NSW 2031|Randwick|NSW|2031|505
+2011|Randwick NSW 2031|Randwick|NSW|2031|476
+2007|Randwick NSW 2031|Randwick|NSW|2031|420
+2006|Randwick NSW 2031|Randwick|NSW|2031|356
+2001|Randwick NSW 2031|Randwick|NSW|2031|328
+2013|Raymond NSW 2324|Raymond|NSW|2324|194
+2012|Raymond NSW 2324|Raymond|NSW|2324|219
+2011|Raymond NSW 2324|Raymond|NSW|2324|206
+2007|Raymond NSW 2324|Raymond|NSW|2324|221
+2006|Raymond NSW 2324|Raymond|NSW|2324|179
+2001|Raymond NSW 2324|Raymond|NSW|2324|189
+2015|Raymond Terrace NSW 2324|Raymond Terrace|NSW|2324|181
+2014|Raymond Terrace NSW 2324|Raymond Terrace|NSW|2324|202
+2016|Revesby NSW 2212|Revesby|NSW|2212|188
+2015|Revesby NSW 2212|Revesby|NSW|2212|177
+2011|Revesby NSW 2212|Revesby|NSW|2212|189
+2016|Rhodes NSW 2138|Rhodes|NSW|2138|243
+2015|Rhodes NSW 2138|Rhodes|NSW|2138|257
+2014|Rhodes NSW 2138|Rhodes|NSW|2138|203
+2013|Rhodes NSW 2138|Rhodes|NSW|2138|199
+2016|Riverwood NSW 2210|Riverwood|NSW|2210|177
+2016|Rockdale NSW 2216|Rockdale|NSW|2216|278
+2015|Rockdale NSW 2216|Rockdale|NSW|2216|231
+2014|Rockdale NSW 2216|Rockdale|NSW|2216|232
+2013|Rockdale NSW 2216|Rockdale|NSW|2216|224
+2012|Rockdale NSW 2216|Rockdale|NSW|2216|299
+2011|Rockdale NSW 2216|Rockdale|NSW|2216|288
+2007|Rockdale NSW 2216|Rockdale|NSW|2216|214
+2006|Rockdale NSW 2216|Rockdale|NSW|2216|207
+2001|Rockdale NSW 2216|Rockdale|NSW|2216|208
+2016|Rooty Hill NSW 2766|Rooty Hill|NSW|2766|214
+2015|Rooty Hill NSW 2766|Rooty Hill|NSW|2766|200
+2014|Rooty Hill NSW 2766|Rooty Hill|NSW|2766|200
+2013|Rooty Hill NSW 2766|Rooty Hill|NSW|2766|197
+2012|Rooty Hill NSW 2766|Rooty Hill|NSW|2766|205
+2011|Rooty Hill NSW 2766|Rooty Hill|NSW|2766|201
+2001|Rooty Hill NSW 2766|Rooty Hill|NSW|2766|186
+2011|Roselands NSW 2196|Roselands|NSW|2196|183
+2007|Roselands NSW 2196|Roselands|NSW|2196|176
+2012|Rozelle NSW 2039|Rozelle|NSW|2039|181
+2011|Rozelle NSW 2039|Rozelle|NSW|2039|197
+2016|Rutherford NSW 2320|Rutherford|NSW|2320|176
+2015|Rutherford NSW 2320|Rutherford|NSW|2320|178
+2013|Rutherford NSW 2320|Rutherford|NSW|2320|191
+2016|Ryde NSW 2112|Ryde|NSW|2112|402
+2015|Ryde NSW 2112|Ryde|NSW|2112|375
+2014|Ryde NSW 2112|Ryde|NSW|2112|332
+2013|Ryde NSW 2112|Ryde|NSW|2112|314
+2012|Ryde NSW 2112|Ryde|NSW|2112|312
+2011|Ryde NSW 2112|Ryde|NSW|2112|281
+2007|Ryde NSW 2112|Ryde|NSW|2112|274
+2006|Ryde NSW 2112|Ryde|NSW|2112|258
+2001|Ryde NSW 2112|Ryde|NSW|2112|240
+2016|Seven Hills NSW 2147|Seven Hills|NSW|2147|278
+2015|Seven Hills NSW 2147|Seven Hills|NSW|2147|246
+2014|Seven Hills NSW 2147|Seven Hills|NSW|2147|274
+2013|Seven Hills NSW 2147|Seven Hills|NSW|2147|272
+2012|Seven Hills NSW 2147|Seven Hills|NSW|2147|308
+2011|Seven Hills NSW 2147|Seven Hills|NSW|2147|259
+2007|Seven Hills NSW 2147|Seven Hills|NSW|2147|280
+2006|Seven Hills NSW 2147|Seven Hills|NSW|2147|242
+2001|Seven Hills NSW 2147|Seven Hills|NSW|2147|276
+2011|Singleton NSW 2330|Singleton|NSW|2330|187
+2007|Singleton NSW 2330|Singleton|NSW|2330|189
+2006|Singleton NSW 2330|Singleton|NSW|2330|207
+2001|Singleton NSW 2330|Singleton|NSW|2330|170
+2016|St Clair NSW 2759|St Clair|NSW|2759|281
+2015|St Clair NSW 2759|St Clair|NSW|2759|280
+2014|St Clair NSW 2759|St Clair|NSW|2759|281
+2013|St Clair NSW 2759|St Clair|NSW|2759|265
+2012|St Clair NSW 2759|St Clair|NSW|2759|294
+2011|St Clair NSW 2759|St Clair|NSW|2759|305
+2007|St Clair NSW 2759|St Clair|NSW|2759|288
+2006|St Clair NSW 2759|St Clair|NSW|2759|292
+2001|St Clair NSW 2759|St Clair|NSW|2759|310
+2016|St Marys NSW 2760|St Marys|NSW|2760|201
+2015|St Marys NSW 2760|St Marys|NSW|2760|197
+2014|St Marys NSW 2760|St Marys|NSW|2760|244
+2013|St Marys NSW 2760|St Marys|NSW|2760|239
+2012|St Marys NSW 2760|St Marys|NSW|2760|210
+2011|St Marys NSW 2760|St Marys|NSW|2760|235
+2007|St Marys NSW 2760|St Marys|NSW|2760|239
+2006|St Marys NSW 2760|St Marys|NSW|2760|236
+2001|St Marys NSW 2760|St Marys|NSW|2760|198
+2011|Stanhope NSW 2335|Stanhope|NSW|2335|192
+2016|Strathfield NSW 2135|Strathfield|NSW|2135|227
+2015|Strathfield NSW 2135|Strathfield|NSW|2135|276
+2014|Strathfield NSW 2135|Strathfield|NSW|2135|274
+2013|Strathfield NSW 2135|Strathfield|NSW|2135|260
+2012|Strathfield NSW 2135|Strathfield|NSW|2135|308
+2011|Strathfield NSW 2135|Strathfield|NSW|2135|244
+2007|Strathfield NSW 2135|Strathfield|NSW|2135|211
+2006|Strathfield NSW 2135|Strathfield|NSW|2135|207
+2001|Strathfield NSW 2135|Strathfield|NSW|2135|180
+2016|Sutherland NSW 2232|Sutherland|NSW|2232|179
+2015|Sutherland NSW 2232|Sutherland|NSW|2232|193
+2014|Sutherland NSW 2232|Sutherland|NSW|2232|192
+2013|Sutherland NSW 2232|Sutherland|NSW|2232|196
+2012|Sutherland NSW 2232|Sutherland|NSW|2232|198
+2011|Sutherland NSW 2232|Sutherland|NSW|2232|192
+2006|Sutherland NSW 2232|Sutherland|NSW|2232|187
+2016|Sydney NSW 2000|Sydney|NSW|2000|216
+2015|Sydney NSW 2000|Sydney|NSW|2000|283
+2014|Sydney NSW 2000|Sydney|NSW|2000|213
+2013|Sydney NSW 2000|Sydney|NSW|2000|210
+2012|Sydney NSW 2000|Sydney|NSW|2000|239
+2011|Sydney NSW 2000|Sydney|NSW|2000|186
+2016|Tamworth NSW 2340|Tamworth|NSW|2340|353
+2015|Tamworth NSW 2340|Tamworth|NSW|2340|366
+2014|Tamworth NSW 2340|Tamworth|NSW|2340|459
+2013|Tamworth NSW 2340|Tamworth|NSW|2340|444
+2012|Tamworth NSW 2340|Tamworth|NSW|2340|454
+2011|Tamworth NSW 2340|Tamworth|NSW|2340|441
+2007|Tamworth NSW 2340|Tamworth|NSW|2340|474
+2006|Tamworth NSW 2340|Tamworth|NSW|2340|541
+2001|Tamworth NSW 2340|Tamworth|NSW|2340|467
+2012|Taree NSW 2430|Taree|NSW|2430|199
+2006|Taree NSW 2430|Taree|NSW|2430|193
+2001|Taree NSW 2430|Taree|NSW|2430|195
+2016|The Ponds NSW 2769|The Ponds|NSW|2769|257
+2015|The Ponds NSW 2769|The Ponds|NSW|2769|228
+2014|The Ponds NSW 2769|The Ponds|NSW|2769|191
+2013|The Ponds NSW 2769|The Ponds|NSW|2769|198
+2016|Toongabbie NSW 2146|Toongabbie|NSW|2146|209
+2015|Toongabbie NSW 2146|Toongabbie|NSW|2146|195
+2014|Toongabbie NSW 2146|Toongabbie|NSW|2146|206
+2013|Toongabbie NSW 2146|Toongabbie|NSW|2146|211
+2012|Toongabbie NSW 2146|Toongabbie|NSW|2146|235
+2011|Toongabbie NSW 2146|Toongabbie|NSW|2146|191
+2007|Toongabbie NSW 2146|Toongabbie|NSW|2146|203
+2006|Toongabbie NSW 2146|Toongabbie|NSW|2146|220
+2001|Toongabbie NSW 2146|Toongabbie|NSW|2146|177
+2001|Umina NSW 2257|Umina|NSW|2257|178
+2015|Umina Beach NSW 2257|Umina Beach|NSW|2257|178
+2016|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|351
+2015|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|362
+2014|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|433
+2013|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|436
+2012|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|471
+2011|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|471
+2007|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|568
+2006|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|617
+2001|Wagga Wagga NSW 2650|Wagga Wagga|NSW|2650|634
+2016|Waterloo NSW 2017|Waterloo|NSW|2017|187
+2015|Waterloo NSW 2017|Waterloo|NSW|2017|185
+2006|Wattle Grove NSW 2173|Wattle Grove|NSW|2173|176
+2001|Wattle Grove NSW 2173|Wattle Grove|NSW|2173|234
+2016|Wentworth Point NSW 2127|Wentworth Point|NSW|2127|178
+2016|Wentworthville NSW 2145|Wentworthville|NSW|2145|200
+2015|Wentworthville NSW 2145|Wentworthville|NSW|2145|202
+2014|Wentworthville NSW 2145|Wentworthville|NSW|2145|278
+2013|Wentworthville NSW 2145|Wentworthville|NSW|2145|280
+2012|Wentworthville NSW 2145|Wentworthville|NSW|2145|262
+2011|Wentworthville NSW 2145|Wentworthville|NSW|2145|258
+2007|Wentworthville NSW 2145|Wentworthville|NSW|2145|244
+2006|Wentworthville NSW 2145|Wentworthville|NSW|2145|247
+2001|Wentworthville NSW 2145|Wentworthville|NSW|2145|278
+2016|West Ryde NSW 2114|West Ryde|NSW|2114|208
+2015|West Ryde NSW 2114|West Ryde|NSW|2114|198
+2012|West Ryde NSW 2114|West Ryde|NSW|2114|213
+2011|West Ryde NSW 2114|West Ryde|NSW|2114|192
+2007|West Ryde NSW 2114|West Ryde|NSW|2114|185
+2006|West Ryde NSW 2114|West Ryde|NSW|2114|176
+2016|Westmead NSW 2145|Westmead|NSW|2145|346
+2015|Westmead NSW 2145|Westmead|NSW|2145|339
+2014|Westmead NSW 2145|Westmead|NSW|2145|355
+2013|Westmead NSW 2145|Westmead|NSW|2145|351
+2012|Westmead NSW 2145|Westmead|NSW|2145|347
+2011|Westmead NSW 2145|Westmead|NSW|2145|341
+2007|Westmead NSW 2145|Westmead|NSW|2145|250
+2006|Westmead NSW 2145|Westmead|NSW|2145|213
+2016|Wiley Park NSW 2195|Wiley Park|NSW|2195|244
+2015|Wiley Park NSW 2195|Wiley Park|NSW|2195|233
+2014|Wiley Park NSW 2195|Wiley Park|NSW|2195|240
+2013|Wiley Park NSW 2195|Wiley Park|NSW|2195|229
+2012|Wiley Park NSW 2195|Wiley Park|NSW|2195|253
+2011|Wiley Park NSW 2195|Wiley Park|NSW|2195|239
+2007|Wiley Park NSW 2195|Wiley Park|NSW|2195|181
+2006|Wiley Park NSW 2195|Wiley Park|NSW|2195|185
+2006|Willoughby NSW 2068|Willoughby|NSW|2068|185
+2001|Willoughby NSW 2068|Willoughby|NSW|2068|202
+2016|Wollongong NSW 2500|Wollongong|NSW|2500|194
+2015|Wollongong NSW 2500|Wollongong|NSW|2500|205
+2014|Wollongong NSW 2500|Wollongong|NSW|2500|193
+2013|Wollongong NSW 2500|Wollongong|NSW|2500|190
+2012|Wollongong NSW 2500|Wollongong|NSW|2500|201
+2011|Wollongong NSW 2500|Wollongong|NSW|2500|189
+2016|Yagoona NSW 2199|Yagoona|NSW|2199|264
+2015|Yagoona NSW 2199|Yagoona|NSW|2199|276
+2014|Yagoona NSW 2199|Yagoona|NSW|2199|286
+2013|Yagoona NSW 2199|Yagoona|NSW|2199|292
+2012|Yagoona NSW 2199|Yagoona|NSW|2199|258
+2011|Yagoona NSW 2199|Yagoona|NSW|2199|242
+2007|Yagoona NSW 2199|Yagoona|NSW|2199|226
+2006|Yagoona NSW 2199|Yagoona|NSW|2199|235
+2001|Yagoona NSW 2199|Yagoona|NSW|2199|211

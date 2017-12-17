@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect, request, url_for, jsonify, Response
+from flask import render_template, flash, redirect, request, url_for, jsonify, Response, current_app 
 from app import db, bootstrap
 from . import main 
 from .models import nsw_birth_rates
@@ -6,6 +6,8 @@ from .forms import MainForm, ResultForm
 #from flask_bootstrap import Bootstrap
 import json
 import urllib.request
+from app.population import views as population_views
+from app.birthrate import views as birthrate_views
 
 #Bootstrap(main)
 
@@ -17,21 +19,28 @@ import urllib.request
 @main.route('/', methods=['GET', 'POST'])
 @main.route('/index', methods=['GET', 'POST'])
 def index():
+	print("==>main/views.py::index: enter")
 	form = MainForm()
 	resultform = ResultForm()
 	
 	if form.validate_on_submit() and form.Submit1.data:
 		InputSuburb = form.InputSuburb.data
 
-		#************* BEGIN - NSW Birth Rate Information API Call ****************** 
-		birth_rate_url = "http://codesydneyopend.herokuapp.com/details/"+InputSuburb
-		print (birth_rate_url)
-		request = urllib.request.Request(birth_rate_url)
-		my_response = urllib.request.urlopen(request)
-		json_response = json.load(my_response)
 
+		#************* BEGIN - NSW Birth Rate Information API Call ****************** 
+		# birth_rate_url = "http://codesydneyopend.herokuapp.com/details/"+InputSuburb
+		# print (birth_rate_url)
+		# request = urllib.request.Request(birth_rate_url)
+		# my_response = urllib.request.urlopen(request)
+		# json_response = json.load(my_response)
+
+		my_response_birth = birthrate_views.get_detail(InputSuburb)
+		json_response_birth = json.loads(my_response_birth.get_data())
 		value_details = []
-		value_details = json_response.get('details')
+		value_details = json_response_birth.get('details')
+
+		#value_details = []
+		#value_details = json_response.get('details')
 
 		birth_rate_list = []
 		for d in value_details:
@@ -39,13 +48,10 @@ def index():
 			birth_rate_list.append(selected_fields)		
 		#************ END- NSW Birth Rate Information API Call **********************
 
-		#************* BEGIN - NSW Population Information API Call ****************** 
-		population_url = "https://nswpopulation20171121.herokuapp.com/details/"+InputSuburb
-		request = urllib.request.Request(population_url)
-		my_response_popu = urllib.request.urlopen(request)
-		json_response_popu = json.load(my_response_popu)
-		print(json_response_popu)
 
+		#************* BEGIN - NSW Population Information API Call ****************** 
+		my_response_popu = population_views.get_detail(InputSuburb)
+		json_response_popu = json.loads(my_response_popu.get_data())
 		value_details = []
 		value_details = json_response_popu.get('details')
 
@@ -64,7 +70,7 @@ def index():
                           population_list=population_list)								
 								
 	elif resultform.validate_on_submit() and resultform.Submit2.data:	
-         return redirect(url_for('index'))
+         return redirect(url_for('main.index'))
 	else:		
 	    return render_template('mainform.html',
                                 form=form)
