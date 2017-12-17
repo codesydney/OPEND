@@ -1,0 +1,111 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+	body {background-color:#D5D8DC}
+</style>
+<!-- Test of the branch-->
+<h1 style="color:#3d475c;font-size:75px;font-weight:bold;text-align:left;margin-left:10px">OPEND Project</h1>	
+<div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">A volunteer project of <a href="https://www.code.sydney" target="_blank">Code.Sydney</a></div>	  
+
+      <form action = "" method="POST" name="mainform">
+         <fieldset>
+            <br>
+            {{ resultform.hidden_tag() }}            
+			    <style type="text/css">
+				  h1 { 
+					font-size:55px;
+					color:#3d475c;
+					font-weight:bold; 
+					text-align:left;
+					margin-left:10px;
+				  }
+				  .score {				  
+					color:#D68910;
+					font-size:60px;
+					font-weight:bold; 
+				  }
+				</style>
+						
+            <div style = "font-size:25px;font-weight:normal;text-align:left;margin-left:15px">
+  	           <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left;margin-left:10px">Input Suburb</h2>
+			   <div style="font-size:35px;font-weight:normal;text-align:left;margin-left:10px">{{InputSuburb}}</div><br>
+
+			   <h2 style="color:#3d475c;font-size:30px;font-weight:bold;text-align:left;margin-left:10px">NSW Birth Rate Information</h2>
+               <div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">Explored by <a href="https://github.com/engramar" target="_blank">Engramar Bollas</a></div>	  
+
+			   <table style="font-size:20px;width:90%;text-align:left;font-weight:normal;margin-left:10px" border="1">
+			   <tr>
+   			      <th>Year</th>
+				  <th>Locality</th>
+				  <th>Suburb</th>
+	   			  <th>State</th>
+				  <th>Postcode</th>
+				  <th>Count</th>			  
+			   </tr>				   		
+			   			   
+			   {% for birth_rate in birth_rate_list %}
+			   <tr>
+   			      <td>{% print birth_rate[0] %}</td>
+   			      <td>{% print birth_rate[1] %}</td>
+   			      <td>{% print birth_rate[2] %}</td>
+   			      <td>{% print birth_rate[3] %}</td>
+   			      <td>{% print birth_rate[4] %}</td>
+   			      <td>{% print birth_rate[5] %}</td>
+			   </tr>
+			   {% endfor %}               
+			   <br> 
+			   </table>
+
+               <br>
+                                             
+            <!--Population information-->
+			   <h2 style="color:#3d475c;font-size:30px;font-weight:bold;text-align:left;margin-left:10px">NSW Population Information</h2>
+             <div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">Explored by <a href="https://github.com/interest1024" target="_blank">Bin Liu</a></div>	  
+
+			   <table style="font-size:20px;width:90%;text-align:left;font-weight:normal;margin-left:10px" border="1">
+    			   <tr>
+       			     <th>Year</th>
+    				  <th>Code</th>
+    				  <th>Suburb</th>
+    	   			  <th>State</th>
+    				  <th>Postcode</th>
+    				  <th>Population</th>			  
+    			   </tr>				   		
+    			   			   
+    			   {% for population in population_list %}
+    			   <tr>
+       			      <td>{% print population[0] %}</td>
+       			      <td>{% print population[1] %}</td>
+       			      <td>{% print population[2] %}</td>
+       			      <td>{% print population[3] %}</td>
+       			      <td>{% print population[4] %}</td>
+       			      <td>{% print population[5] %}</td>
+    			   </tr>
+    			   {% endfor %}               
+    			   <br> 
+			   </table>
+
+             <br>
+                                             
+             <div style = "margin-left:10px">               
+			   {{ resultform.Submit2 }}
+			   </div>
+
+
+
+
+
+            </div>
+            
+         </fieldset>
+      </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution License</a></div>	  	  
+	  
+{% endblock %}
