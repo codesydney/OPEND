@@ -1,13 +1,23 @@
 from app import db
 
-class nsw_addresses (db.Model):
-	year     = db.Column(db.Integer)
-	address  = db.Column(db.String(100))
-	suburb   = db.Column(db.String(100))
-	state    = db.Column(db.String(100))
-	postcode = db.Column(db.Integer)
-	count    = db.Column(db.Integer)
-	recid    = db.Column(db.Integer, primary_key = True)
+class nsw_addresses(db.Model):
+
+	__tablename__ = "nsw_addresses"
+	__table_args__ = {'extend_existing': True} 
+
+	address_detail_pid = db.Column(db.String(20), primary_key=True)
+	address            = db.Column(db.String(150))
+	locality_name      = db.Column(db.String(100))
+	postcode           = db.Column(db.String(4))
+	longitude          = db.Column(db.String(20))
+	latitude           = db.Column(db.String(20))
+	mb_2016_code       = db.Column(db.String(20))
 
 	def __repr__(self):
-		return '{} {} {} {} {} {} {}'.format(self.year, self.address, self.suburb, self.state, self.postcode, self.count, self.recid)
+		return '{} {} {} {} {} {} {}'.format(self.address_detail_pid, \
+			                                 self.address, \
+			                                 self.locality_name, \
+			                                 self.postcode, \
+			                                 self.longitude, \
+			                                 self.latitude, \
+			                                 self.mb_2016_code)

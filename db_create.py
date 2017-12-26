@@ -4,14 +4,16 @@ from models import nsw_addresses
 #create the database and the db tables
 db.create_all()
 
-#create the database and the db tables
-db.session.add(nsw_addresses("2014","1 George St, Albion Park NSW 2527","Albion Park","NSW","2527","193","1"))
-db.session.add(nsw_addresses("2011","1 George St, Annandale NSW 2038","Annandale","NSW","2038","187","2"))
-db.session.add(nsw_addresses("2016","1 George St, Armidale NSW 2350","Armidale","NSW","2350","266","3"))
-db.session.add(nsw_addresses("2001","1 George St, Arncliffe NSW 2205","Arncliffe","NSW","2205","181","4"))
-db.session.add(nsw_addresses("2006","1 George St, Artarmon NSW 2064","Artarmon","NSW","2064","181","5"))
-db.session.add(nsw_addresses("2016","1 George St, Ashfield NSW 2131","Ashfield","NSW","2131","325","6"))
-db.session.add(nsw_addresses("2016","1 George St, Auburn NSW 2144","Auburn","NSW","2144","751","7"))
+#upload data
+#upload data
+db.session.add(nsw_addresses("GANSW718861359","UNIT 2102 1 AUSTRALIA AVENUE SYDNEY OLYMPIC PARK NSW 2127","SYDNEY OLYMPIC PARK","2127","151.07364598","-33.84836107","11205502200"))
+db.session.add(nsw_addresses("GANSW705927323","MACARTHUR PARK 699 POTTSVILLE ROAD SLEEPY HOLLOW NSW 2483","SLEEPY HOLLOW","2483","153.53384322","-28.41046896","10782190000"))
+db.session.add(nsw_addresses("GANSW716603375","UNIT 1 7 BERRAMBOOL DRIVE BERRAMBOOL NSW 2548","BERRAMBOOL","2548","149.90769269","-36.88292076","10073810000"))
+db.session.add(nsw_addresses("GANSW715622808","18 JANNALI ROAD DUBBO NSW 2830","DUBBO","2830","148.57858523","-32.24380557","10243443000"))
+db.session.add(nsw_addresses("GANSW716999734","UNIT 7 5 MOWATT STREET QUEANBEYAN EAST NSW 2620","QUEANBEYAN EAST","2620","149.24007432","-35.35442150","10640080000"))
+db.session.add(nsw_addresses("GANSW717697948","UNIT 206 2 DAWES ROAD BELROSE NSW 2085","BELROSE","2085","151.22241788","-33.73340701","10821910000"))
+db.session.add(nsw_addresses("GANSW708588672","39 DELPRAT AVENUE BERESFIELD NSW 2322","BERESFIELD","2322","151.65020323","-32.80186140","10550410000"))
+db.session.add(nsw_addresses("GANSW705137227","98 STANLEY STREET KOORINGAL NSW 2650","KOORINGAL","2650","147.36644103","-35.14553346","10795890000"))
 
 #commit the changes
 db.session.commit()

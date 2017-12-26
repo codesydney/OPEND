@@ -19,7 +19,7 @@ def index():
 		InputAddress = form.InputAddress.data
 
 		#************* Get the suburb name of the chosen address ****************** 
-		query= db.session.query(nsw_addresses.suburb).filter(nsw_addresses.address.ilike(InputAddress))
+		query= db.session.query(nsw_addresses.locality_name).filter(nsw_addresses.address.ilike(InputAddress))
 		suburblist = []
 		for mv in query.all():
 			suburblist.append(mv[0])		
@@ -66,7 +66,7 @@ def index():
 @main.route('/autocomplete', methods=['GET'])
 def autocomplete():
     search = request.args.get('q')
-    query = db.session.query(nsw_addresses.address).filter(nsw_addresses.address.ilike("%"+str(search)+"%"))	
+    query = db.session.query(nsw_addresses.address).filter(nsw_addresses.address.ilike("%"+str(search)+"%")).limit(10)	
     addresslist = []
     for mv in query.all():
     	addresslist.append(mv[0])
