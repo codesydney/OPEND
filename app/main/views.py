@@ -7,6 +7,7 @@ import json
 import urllib.request
 from app.population import views as population_views
 from app.birthrate import views as birthrate_views
+from sqlalchemy import text
 
 @main.route('/', methods=['GET', 'POST'])
 @main.route('/index', methods=['GET', 'POST'])
@@ -66,8 +67,10 @@ def index():
 @main.route('/autocomplete', methods=['GET'])
 def autocomplete():
     search = request.args.get('q')
-    query = db.session.query(nsw_addresses.address).filter(nsw_addresses.address.ilike("%"+str(search)+"%")).limit(10)	
+    sql = text("SELECT nsw_addresses.address from nsw_addresses where tsv_address @@ plainto_tsquery(:x) limit 5")
+    sql2 = sql.bindparams(x=search)
+    result = db.engine.execute(sql2)
     addresslist = []
-    for mv in query.all():
-    	addresslist.append(mv[0])
+    for row in result:
+    	addresslist.append(row[0])
     return jsonify(matching_results=addresslist)
