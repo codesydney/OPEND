@@ -28,7 +28,7 @@ def get_details():
 @birthrate.route('/details/<string:SUBURB>', methods=['GET'])
 def get_detail(SUBURB):
     db = get_db_birth()
-    details_cur = db.execute('select YEAR, LOCALITY, SUBURB, STATE, POSTCODE, COUNT from NSW_BIRTH_RATE where SUBURB = ?', [SUBURB])
+    details_cur = db.execute('select YEAR, LOCALITY, SUBURB, STATE, POSTCODE, COUNT from NSW_BIRTH_RATE where SUBURB like ?', [SUBURB])
     details = details_cur.fetchall()
 
     return_values = []

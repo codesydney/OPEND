@@ -36,7 +36,7 @@ def get_detail(SUBURB):
     # db = sql
 
 
-    details_cur = db.execute('select YEAR, CODE, SUBURB, STATE, POSTCODE, POPULATION from NSW_POPULATION where SUBURB like ?', ['%'+SUBURB+'%'])
+    details_cur = db.execute('select YEAR, CODE, SUBURB, STATE, POSTCODE, POPULATION from NSW_POPULATION where SUBURB like ?', [SUBURB])
     details = details_cur.fetchall()
 
     return_values = []
