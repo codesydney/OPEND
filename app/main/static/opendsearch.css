@@ -1,0 +1,61 @@
+body
+{
+    background-color: #e7ebee;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar.navbar-default.navbar-fixed-top.mainsearchnavbar{
+  background-color:transparent;
+}
+
+
+.navbar-default
+{
+    background-color: #ffffff;
+}
+
+
+
+.mainsearchrow1{
+  padding: 200px 8%;
+}
+
+.mainsearchrow2{
+  padding: 50px 8%;
+}
+
+.input-group-addon {
+    padding: 0px 0px;
+    position:relative;
+    min-width:110px; 
+    max-width:180px;
+}
+
+.mainsearchbtn{
+    position:absolute;
+    width:100%;
+    left:0px;
+    right:0px;
+    top:0;
+    bottom:0;
+    padding:0px 0px;
+    border: 0;
+    color: #FFFFFF;
+    background-color: #58c1a3;
+    font-size:14px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+header {
+    height: 928px;
+    background-attachment: scroll;
+    background-image: url(suburbs.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
