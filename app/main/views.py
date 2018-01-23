@@ -28,7 +28,8 @@ def index():
 
 		#************* BEGIN - NSW Birth Rate Information API Call ****************** 
 		my_response_birth = birthrate_views.get_detail(InputSuburb)
-		json_response_birth = json.loads(my_response_birth.get_data())
+		print(my_response_birth.get_data().decode("utf-8"))
+		json_response_birth = json.loads(my_response_birth.get_data().decode("utf-8"))
 		value_details = []
 		value_details = json_response_birth.get('details')
 
@@ -40,17 +41,15 @@ def index():
 
 		#************* BEGIN - NSW Population Information API Call ****************** 
 		my_response_popu = population_views.get_detail(InputSuburb)
-		json_response_popu = json.loads(my_response_popu.get_data())
+		json_response_popu = json.loads(my_response_popu.get_data().decode("utf-8"))
 		value_details = []
 		value_details = json_response_popu.get('details')
 
 		population_list = []
 		for d in value_details:
-			print("line 51",d)
 			selected_fields=[d['YEAR'],d['CODE'],d['SUBURB'],d['STATE'],d['POSTCODE'],d['POPULATION']]
 			population_list.append(selected_fields)
 		#************ END- NSW Population Information API Call **********************
-		print("line 54",population_list)
 
 		return render_template('result.html',
 								resultform=resultform,
