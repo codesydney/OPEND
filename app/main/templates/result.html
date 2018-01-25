@@ -4,22 +4,41 @@
 {% block styles %}
 {{super()}}
   <link rel="stylesheet" href="{{url_for('.static', filename='opendresult.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('.static', filename='leaflet.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('.static', filename='leaflet.bookmarks.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('.static', filename='radio-button.css') }}" />  
+  <style>
+  #map {
+            height: 600px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }  
+  </style>
 {% endblock %}
 
 
 {% block scripts %}
 {{ super() }}
-<script>
-  $('.panel-collapse').on('show.bs.collapse', function () {
-    $(this).siblings('.panel-heading').addClass('active');
-  });
+  <script>
+    $('.panel-collapse').on('show.bs.collapse', function () {
+      $(this).siblings('.panel-heading').addClass('active');
+    });
 
-  $('.panel-collapse').on('hide.bs.collapse', function () {
-    $(this).siblings('.panel-heading').removeClass('active');
-  });
-</script>   
+    $('.panel-collapse').on('hide.bs.collapse', function () {
+      $(this).siblings('.panel-heading').removeClass('active');
+    });
+  </script>   
+
+  <script src="{{ url_for('.static', filename='rainbowvis.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('.static', filename='leaflet.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('.static', filename='leaflet.Bookmarks.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('.static', filename='loadmap.js') }}" type="text/javascript"></script>
 {% endblock %}
 
+{% block body_attribs %}
+onload="init();"
+{% endblock body_attribs %}
 
 {% block content %}
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -182,18 +201,7 @@
 
 
     <div class="col-sm-6 col-lg-7" id="map-parent">   
-      <table>
-        <tr>
-            <td>
-                <p>right side: </p>
-            </td>
-            <td>
-                <p>map
-                </p>
-            </td>
-        </tr>
-      </table>
-
+      <div id="map"></div>
     </div>
   </div>
 
