@@ -40,6 +40,7 @@ pool = ThreadedConnectionPool(
 # get the boundary name that suits each (tiled map) zoom level and its minimum value to colour in
 def get_boundary(zoom_level):
 
+    '''
     if zoom_level < 7:
         boundary_name = "ste"
         min_display_value = 2025
@@ -60,6 +61,10 @@ def get_boundary(zoom_level):
         min_display_value = 5
 
     return boundary_name, min_display_value
+    '''
+
+    #BinLiu: alway show suburb boundary.
+    return "ssc",5
 
 @contextmanager
 def get_db_connection():
@@ -104,11 +109,22 @@ def index():
 		InputAddress = form.InputAddress.data
 
 		#************* Get the suburb name of the chosen address ****************** 
-		query= db.session.query(nsw_addresses.locality_name).filter(nsw_addresses.address.ilike(InputAddress))
+		query= db.session.query(nsw_addresses.locality_name,nsw_addresses.mb_2016_code).filter(nsw_addresses.address.ilike(InputAddress))
+		suburblist = []
+		mb_2016_codelist=[]
+		for mv in query.all():
+			suburblist.append(mv[0])
+			mb_2016_codelist.append(mv[1])
+		InputSuburb = suburblist[0]	
+
+		'''
+		query= db.session.query(nsw_addresses.mb_2016_code).filter(nsw_addresses.address.ilike(InputAddress))
 		suburblist = []
 		for mv in query.all():
 			suburblist.append(mv[0])		
 		InputSuburb = suburblist[0]	
+		'''
+		mb_2016_code=mb_2016_codelist[0]
 
 		#************* BEGIN - NSW Birth Rate Information API Call ****************** 
 		my_response_birth = birthrate_views.get_detail(InputSuburb)
@@ -139,7 +155,9 @@ def index():
 								resultform=resultform,
 								InputSuburb=InputSuburb,
 								birth_rate_list=birth_rate_list,
-                                population_list=population_list)								
+                                population_list=population_list,
+                                mb_2016_code=mb_2016_code,
+                                stats="g1")								
 								
 	elif resultform.validate_on_submit() and resultform.Submit2.data:	
          return redirect(url_for('main.index'))

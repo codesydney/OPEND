@@ -94,8 +94,9 @@ if (!queryObj.stats) {
     // TODO: handle maths operators as well as plain stats
 }
 
-function init() {
-    console.log("loadmap.js::init: enter");
+function init(InputSuburb,mb_2016_code,stats) {
+    console.log("loadmap.js::init: enter, paras="+InputSuburb+" , "+mb_2016_code+" , "+stats);
+    
     // initial stat is the first one in the querystring
     currentStatId = statsArray[0];
 
@@ -268,7 +269,7 @@ function init() {
 
         // get the initial stat"s metadata
         currentStats = metadataResponse[0].stats;
-        console.log("currentStats");
+        console.log("loadmap.js::init: currentStats=");
         console.log(currentStats);
         getCurrentStatMetadata();
 
