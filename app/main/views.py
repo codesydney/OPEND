@@ -108,27 +108,33 @@ def index():
 	if form.validate_on_submit() and form.Submit1.data:
 		InputAddress = form.InputAddress.data
 
-		#************* Get the suburb name of the chosen address ****************** 
+		#************* Get the suburb name and mb code of the chosen address ****************** 
 		query= db.session.query(nsw_addresses.locality_name,nsw_addresses.mb_2016_code).filter(nsw_addresses.address.ilike(InputAddress))
 		suburblist = []
 		mb_2016_codelist=[]
 		for mv in query.all():
 			suburblist.append(mv[0])
 			mb_2016_codelist.append(mv[1])
-		InputSuburb = suburblist[0]	
-
-		'''
-		query= db.session.query(nsw_addresses.mb_2016_code).filter(nsw_addresses.address.ilike(InputAddress))
-		suburblist = []
-		for mv in query.all():
-			suburblist.append(mv[0])		
-		InputSuburb = suburblist[0]	
-		'''
+		InputSuburb = suburblist[0]
 		mb_2016_code=mb_2016_codelist[0]
+
+		#get ssc code from mb code
+		sql1 = text("SELECT ssc_code \
+			from public.mb_ssc_2016 \
+			where mb_code_2016 = :x \
+			")
+		sql2 = sql1.bindparams(x=mb_2016_code)
+		result = db.engine.execute(sql2)
+		searchssclist = []
+		for row in result:
+			searchssclist.append(row[0])
+		InputSSC = searchssclist[0]
+		print("view.py::line 133: InputSSC = "+InputSSC)
+
 
 		#************* BEGIN - NSW Birth Rate Information API Call ****************** 
 		my_response_birth = birthrate_views.get_detail(InputSuburb)
-		print(my_response_birth.get_data().decode("utf-8"))
+		#print(my_response_birth.get_data().decode("utf-8"))
 		json_response_birth = json.loads(my_response_birth.get_data().decode("utf-8"))
 		value_details = []
 		value_details = json_response_birth.get('details')
@@ -157,6 +163,7 @@ def index():
 								birth_rate_list=birth_rate_list,
                                 population_list=population_list,
                                 mb_2016_code=mb_2016_code,
+                                InputSSC=InputSSC,
                                 stats="g1")								
 								
 	elif resultform.validate_on_submit() and resultform.Submit2.data:	
@@ -325,6 +332,7 @@ def get_metadata():
 
 @main.route("/get-data")
 def get_data():
+
     full_start_time = datetime.now()
     # start_time = datetime.now()
 
@@ -340,6 +348,8 @@ def get_data():
     table_id = request.args.get('t')
     boundary_name = request.args.get('b')
     zoom_level = int(request.args.get('z'))
+    InputSSC = request.args.get('InputSSC')
+    #print("==>main/views.py::get_data: enter InputSSC="+InputSSC)
 
     # TODO: add support for equations
 
@@ -348,13 +358,14 @@ def get_data():
         boundary_name, min_val = get_boundary(zoom_level)
 
     display_zoom = str(zoom_level).zfill(2)
-
+    #print("==>main/views.py::get_data: enter line 361")
     with get_db_cursor() as pg_cur:
         # print("Connected to database in {0}".format(datetime.now() - start_time))
         # start_time = datetime.now()
 
         # build SQL with SQL injection protection
         # yes, this is ridiculous - if someone can find a shorthand way of doing this then fire up the pull requests!
+        '''
         sql_template = "SELECT bdy.id, bdy.name, bdy.population, tab.%s / bdy.area AS density, " \
               "CASE WHEN bdy.population > 0 THEN tab.%s / bdy.population * 100.0 ELSE 0 END AS percent, " \
               "tab.%s, geojson_%s AS geometry " \
@@ -366,8 +377,22 @@ def get_data():
         sql = pg_cur.mogrify(sql_template, (AsIs(stat_id), AsIs(stat_id), AsIs(stat_id), AsIs(display_zoom),
                                             AsIs(boundary_name), AsIs(boundary_name), AsIs(table_id), AsIs(map_left),
                                             AsIs(map_bottom), AsIs(map_right), AsIs(map_top)))
+        '''
+        #print("==>main/views.py::get_data: enter line 381")
+        sql_template = "SELECT bdy.id, bdy.name, bdy.population, tab.%s / bdy.area AS density, " \
+              "CASE WHEN bdy.population > 0 THEN tab.%s / bdy.population * 100.0 ELSE 0 END AS percent, " \
+              "tab.%s, geojson_%s AS geometry " \
+              "FROM {0}.%s AS bdy " \
+              "INNER JOIN {1}.%s_%s AS tab ON bdy.id = tab.{2} " \
+              "WHERE bdy.id = '%s'" \
+              .format(settings['web_schema'], settings['data_schema'], settings['region_id_field'])
+        #print("==>main/views.py::get_data: enter line 389")
+
+        sql = pg_cur.mogrify(sql_template, (AsIs(stat_id), AsIs(stat_id), AsIs(stat_id), AsIs(display_zoom),
+                                            AsIs(boundary_name), AsIs(boundary_name), AsIs(table_id), AsIs(InputSSC)))
+
         print("server.py::line 283: ",end=' ')
-        print(sql,end=' ')
+        print(sql)
         try:
             pg_cur.execute(sql)
         except psycopg2.Error:

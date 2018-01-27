@@ -30,7 +30,7 @@ var currentBoundary = "";
 var currentBoundaryMin = 7;
 var currentStatId = "";
 
-var highlightColour = "#ffff00";
+var highlightColour = "#ff0000";
 var lowPopColour = "#422";
 var colourRamp;
 //var colourRange = ["#1f1f1f", "#e45427"]; // dark grey > orange/red
@@ -94,8 +94,8 @@ if (!queryObj.stats) {
     // TODO: handle maths operators as well as plain stats
 }
 
-function init(InputSuburb,mb_2016_code,stats) {
-    console.log("loadmap.js::init: enter, paras="+InputSuburb+" , "+mb_2016_code+" , "+stats);
+function init(InputSuburb,mb_2016_code,InputSSC,stats) {
+    console.log("loadmap.js::init: enter, paras="+InputSuburb+","+mb_2016_code+","+InputSSC+","+stats);
     
     // initial stat is the first one in the querystring
     currentStatId = statsArray[0];
@@ -123,13 +123,14 @@ function init(InputSuburb,mb_2016_code,stats) {
     map.getPane("basemap").style.pointerEvents = "none";
 
     // load CartoDB basemap
-    L.tileLayer("http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png", {
+    //L.tileLayer("http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png", {
+    L.tileLayer("https://a.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution : "&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> &copy; <a href='http://cartodb.com/attributions'>CartoDB</a>",
         subdomains : "abcd",
         minZoom : minZoom,
         maxZoom : maxZoom,
-        pane: "basemap",
-        opacity: 0.4
+        pane: "tilePane", //"basemap",
+        opacity: 1
     }).addTo(map);
 
     // set the view to a given center and zoom
@@ -235,7 +236,7 @@ function init(InputSuburb,mb_2016_code,stats) {
 
             // update stat metadata and map data
             getCurrentStatMetadata();
-            getData();
+            getData(InputSSC);
         });
     };
     themer.addTo(map);
@@ -244,7 +245,7 @@ function init(InputSuburb,mb_2016_code,stats) {
     // get a new set of data when map panned or zoomed
     map.on("moveend", function () {
         getCurrentStatMetadata();
-        getData();
+        getData(InputSSC);
     });
 
     // get list of boundaries and the zoom levels they display at
@@ -278,7 +279,7 @@ function init(InputSuburb,mb_2016_code,stats) {
         info.addTo(map);
 
         // get the first lot of data
-        getData();
+        getData(InputSSC);
     });
 }
 
@@ -336,7 +337,11 @@ function stringNumber(val, mapType, type) {
     return numString;
 }
 
-function getData() {
+/***********************************************************
+*called when init or moving map
+*call main/views.py::@main.route("/get-data") to get boundaries data
+***********************************************************/
+function getData(InputSSC) {
 
     console.time("got boundaries");
 
@@ -380,7 +385,10 @@ function getData() {
 //    ua.push("&c=");
 //    ua.push(censusYear);
     ua.push("&z=");
-    ua.push((currentZoomLevel).toString());
+    ua.push((currentZoomLevel).toString())
+    ua.push("&InputSSC=");
+    ua.push(InputSSC)
+    ;
 
     var requestString = ua.join("");
 
@@ -390,6 +398,9 @@ function getData() {
     $.getJSON(requestString, gotData);
 }
 
+/***********************************************************
+*create geo shape from retuned json boundaries data using L.geoJson
+************************************************************/
 function gotData(json) {
     console.timeEnd("got boundaries");
     console.time("parsed GeoJSON");
@@ -399,6 +410,7 @@ function gotData(json) {
             geojsonLayer.clearLayers();
         }
 
+        /*
         // get min and max values
         currMapMin = 999999999;
         currMapMax = -999999999;
@@ -429,8 +441,9 @@ function gotData(json) {
         // set the number range for the colour gradient (allow for decimals, convert to ints)
         var minInt = parseInt(currMapMin.toFixed(1).toString().replace(".",""));
         var maxInt = parseInt(currMapMax.toFixed(1).toString().replace(".",""));
-
+    
         colourRamp.setNumberRange(minInt, maxInt);
+        */
 
         //update the legend with the new min and max
         // legend.update();
@@ -466,14 +479,15 @@ function style(feature) {
         renderVal = props.percent;
     }
 
-    var col = getColor(renderVal, props.population);
+    //var col = getColor(renderVal, props.population);
+    var col = "#FFF056";
 
     return {
         weight : 2,
-        opacity : 1.0,
-        color : col,
-        fillOpacity : 1.0,
-        fillColor : col
+        opacity : 0.8,
+        color : "#b30000",
+        fillOpacity : 0.3,
+        fillColor : "#FFF056"
     };
 }
 
@@ -514,6 +528,7 @@ function highlightFeature(e) {
         currLayer.setStyle({
             weight: 2.5,
             opacity: 0.8,
+            fillOpacity : 0.1,
             color: highlightColour
         });
 
