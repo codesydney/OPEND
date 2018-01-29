@@ -17,6 +17,9 @@ var minZoom = 4;
 var maxZoom = 16;
 var currentZoomLevel = 0;
 var censusYear = "";
+var curMapCenter = new L.LatLng(-33.85, 151.15);
+//{lat: 151.12754999999999, lng: -33.88945}
+var hasInitMapPanTo = 0;
 
 var statsArray = [];
 var currentStat;
@@ -70,7 +73,7 @@ if (queryObj.b !== undefined) {
 
 // start zoom level
 if (!queryObj.z) {
-    currentZoomLevel = 12;
+    currentZoomLevel = 13;
 } else {
     currentZoomLevel = queryObj.z;
 }
@@ -134,7 +137,8 @@ function init(InputSuburb,mb_2016_code,InputSSC,stats) {
     }).addTo(map);
 
     // set the view to a given center and zoom
-    map.setView(new L.LatLng(-33.85, 151.15), currentZoomLevel);
+    //map.setView(new L.LatLng(-33.85, 151.15), currentZoomLevel);
+    map.setView(curMapCenter, currentZoomLevel);
 
     // get bookmarks
     var bmStorage = {
@@ -147,12 +151,13 @@ function init(InputSuburb,mb_2016_code,InputSSC,stats) {
     };
 
     // add bookmark control to map
-    
+    /*
     var bm = new L.Control.Bookmarks({
         position : "topleft",
         localStorage : false,
         storage : bmStorage
     }).addTo(map);
+    */
 
     // add control that shows info on mouseover
     info = L.control();
@@ -281,6 +286,21 @@ function init(InputSuburb,mb_2016_code,InputSSC,stats) {
         // get the first lot of data
         getData(InputSSC);
     });
+
+
+}
+
+//put the input subsurb in the center of map when init the map
+function initMapPanTo(curMapCenter){
+    if(hasInitMapPanTo == 0){
+        console.log("loadmap.js::initMapPanTo");
+        console.log(curMapCenter);
+        //map.panTo(curMapCenter);
+        map.setView(curMapCenter, currentZoomLevel);
+        hasInitMapPanTo=1;
+    }
+    else{
+    }
 }
 
 function setRadioButtons() {
@@ -402,8 +422,8 @@ function getData(InputSSC) {
 *create geo shape from retuned json boundaries data using L.geoJson
 ************************************************************/
 function gotData(json) {
-    console.timeEnd("got boundaries");
-    console.time("parsed GeoJSON");
+    console.timeEnd("loadmap.js::gotData: got boundaries");
+    console.time("loadmap.js::gotData: parsed GeoJSON");
 
     if (json !== null) {
         if(geojsonLayer !== undefined) {
@@ -462,11 +482,30 @@ function gotData(json) {
             style : style,
             onEachFeature : onEachFeature
         }).addTo(map);
-    } else {
+
+        //calculate the center of the suburb
+
+        //json.forEach(function(curElement){
+        //console.log("loadmap.js::gotData: json:"+json);
+        //});
+
+        console.log("loadmap.js::gotData: curCenter = ");
+        var curPolygon = L.polygon(json.features[0].geometry.coordinates);
+        var mapCenter = curPolygon.getBounds().getCenter();
+        console.log(mapCenter.lat);
+        curMapCenter = new L.LatLng(mapCenter.lng,mapCenter.lat);
+        console.log(curMapCenter);
+        //put the input subsurb in the center of map
+        initMapPanTo(curMapCenter);
+
+    } 
+    else {
         alert("No data returned!")
     }
 
-    console.timeEnd("parsed GeoJSON");
+    console.timeEnd("loadmap.js::gotData: parsed GeoJSON");
+
+
 }
 
 function style(feature) {
