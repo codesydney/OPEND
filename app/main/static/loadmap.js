@@ -489,12 +489,12 @@ function gotData(json) {
         //console.log("loadmap.js::gotData: json:"+json);
         //});
 
-        console.log("loadmap.js::gotData: curCenter = ");
+        //console.log("loadmap.js::gotData: curCenter = ");
         var curPolygon = L.polygon(json.features[0].geometry.coordinates);
         var mapCenter = curPolygon.getBounds().getCenter();
-        console.log(mapCenter.lat);
+        //console.log(mapCenter.lat);
         curMapCenter = new L.LatLng(mapCenter.lng,mapCenter.lat);
-        console.log(curMapCenter);
+        //console.log(curMapCenter);
         //put the input subsurb in the center of map
         initMapPanTo(curMapCenter);
 
