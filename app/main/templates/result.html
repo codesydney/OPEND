@@ -12,8 +12,7 @@
   #map {
             height: 600px;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }  
+            -moz-osx-font-smoothing: grayscale;        }  
   </style>
 {% endblock %}
 
@@ -37,7 +36,7 @@
 {% endblock %}
 
 {% block body_attribs %}
-onload="init();"
+onload="init('{{InputSuburb}}','{{mb_2016_code}}','{{InputSSC}}','{{stats}}');"
 {% endblock body_attribs %}
 
 {% block content %}

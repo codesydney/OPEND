@@ -17,6 +17,9 @@ var minZoom = 4;
 var maxZoom = 16;
 var currentZoomLevel = 0;
 var censusYear = "";
+var curMapCenter = new L.LatLng(-33.85, 151.15);
+//{lat: 151.12754999999999, lng: -33.88945}
+var hasInitMapPanTo = 0;
 
 var statsArray = [];
 var currentStat;
@@ -30,7 +33,7 @@ var currentBoundary = "";
 var currentBoundaryMin = 7;
 var currentStatId = "";
 
-var highlightColour = "#ffff00";
+var highlightColour = "#ff0000";
 var lowPopColour = "#422";
 var colourRamp;
 //var colourRange = ["#1f1f1f", "#e45427"]; // dark grey > orange/red
@@ -70,7 +73,7 @@ if (queryObj.b !== undefined) {
 
 // start zoom level
 if (!queryObj.z) {
-    currentZoomLevel = 12;
+    currentZoomLevel = 13;
 } else {
     currentZoomLevel = queryObj.z;
 }
@@ -94,8 +97,9 @@ if (!queryObj.stats) {
     // TODO: handle maths operators as well as plain stats
 }
 
-function init() {
-    console.log("loadmap.js::init: enter");
+function init(InputSuburb,mb_2016_code,InputSSC,stats) {
+    console.log("loadmap.js::init: enter, paras="+InputSuburb+","+mb_2016_code+","+InputSSC+","+stats);
+    
     // initial stat is the first one in the querystring
     currentStatId = statsArray[0];
 
@@ -122,17 +126,19 @@ function init() {
     map.getPane("basemap").style.pointerEvents = "none";
 
     // load CartoDB basemap
-    L.tileLayer("http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png", {
+    //L.tileLayer("http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png", {
+    L.tileLayer("https://a.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution : "&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> &copy; <a href='http://cartodb.com/attributions'>CartoDB</a>",
         subdomains : "abcd",
         minZoom : minZoom,
         maxZoom : maxZoom,
-        pane: "basemap",
-        opacity: 0.4
+        pane: "tilePane", //"basemap",
+        opacity: 1
     }).addTo(map);
 
     // set the view to a given center and zoom
-    map.setView(new L.LatLng(-33.85, 151.15), currentZoomLevel);
+    //map.setView(new L.LatLng(-33.85, 151.15), currentZoomLevel);
+    map.setView(curMapCenter, currentZoomLevel);
 
     // get bookmarks
     var bmStorage = {
@@ -145,12 +151,13 @@ function init() {
     };
 
     // add bookmark control to map
-    
+    /*
     var bm = new L.Control.Bookmarks({
         position : "topleft",
         localStorage : false,
         storage : bmStorage
     }).addTo(map);
+    */
 
     // add control that shows info on mouseover
     info = L.control();
@@ -234,7 +241,7 @@ function init() {
 
             // update stat metadata and map data
             getCurrentStatMetadata();
-            getData();
+            getData(InputSSC);
         });
     };
     themer.addTo(map);
@@ -243,7 +250,7 @@ function init() {
     // get a new set of data when map panned or zoomed
     map.on("moveend", function () {
         getCurrentStatMetadata();
-        getData();
+        getData(InputSSC);
     });
 
     // get list of boundaries and the zoom levels they display at
@@ -268,7 +275,7 @@ function init() {
 
         // get the initial stat"s metadata
         currentStats = metadataResponse[0].stats;
-        console.log("currentStats");
+        console.log("loadmap.js::init: currentStats=");
         console.log(currentStats);
         getCurrentStatMetadata();
 
@@ -277,8 +284,23 @@ function init() {
         info.addTo(map);
 
         // get the first lot of data
-        getData();
+        getData(InputSSC);
     });
+
+
+}
+
+//put the input subsurb in the center of map when init the map
+function initMapPanTo(curMapCenter){
+    if(hasInitMapPanTo == 0){
+        console.log("loadmap.js::initMapPanTo");
+        console.log(curMapCenter);
+        //map.panTo(curMapCenter);
+        map.setView(curMapCenter, currentZoomLevel);
+        hasInitMapPanTo=1;
+    }
+    else{
+    }
 }
 
 function setRadioButtons() {
@@ -335,7 +357,11 @@ function stringNumber(val, mapType, type) {
     return numString;
 }
 
-function getData() {
+/***********************************************************
+*called when init or moving map
+*call main/views.py::@main.route("/get-data") to get boundaries data
+***********************************************************/
+function getData(InputSSC) {
 
     console.time("got boundaries");
 
@@ -379,7 +405,10 @@ function getData() {
 //    ua.push("&c=");
 //    ua.push(censusYear);
     ua.push("&z=");
-    ua.push((currentZoomLevel).toString());
+    ua.push((currentZoomLevel).toString())
+    ua.push("&InputSSC=");
+    ua.push(InputSSC)
+    ;
 
     var requestString = ua.join("");
 
@@ -389,15 +418,19 @@ function getData() {
     $.getJSON(requestString, gotData);
 }
 
+/***********************************************************
+*create geo shape from retuned json boundaries data using L.geoJson
+************************************************************/
 function gotData(json) {
-    console.timeEnd("got boundaries");
-    console.time("parsed GeoJSON");
+    console.timeEnd("loadmap.js::gotData: got boundaries");
+    console.time("loadmap.js::gotData: parsed GeoJSON");
 
     if (json !== null) {
         if(geojsonLayer !== undefined) {
             geojsonLayer.clearLayers();
         }
 
+        /*
         // get min and max values
         currMapMin = 999999999;
         currMapMax = -999999999;
@@ -428,8 +461,9 @@ function gotData(json) {
         // set the number range for the colour gradient (allow for decimals, convert to ints)
         var minInt = parseInt(currMapMin.toFixed(1).toString().replace(".",""));
         var maxInt = parseInt(currMapMax.toFixed(1).toString().replace(".",""));
-
+    
         colourRamp.setNumberRange(minInt, maxInt);
+        */
 
         //update the legend with the new min and max
         // legend.update();
@@ -448,11 +482,30 @@ function gotData(json) {
             style : style,
             onEachFeature : onEachFeature
         }).addTo(map);
-    } else {
+
+        //calculate the center of the suburb
+
+        //json.forEach(function(curElement){
+        //console.log("loadmap.js::gotData: json:"+json);
+        //});
+
+        //console.log("loadmap.js::gotData: curCenter = ");
+        var curPolygon = L.polygon(json.features[0].geometry.coordinates);
+        var mapCenter = curPolygon.getBounds().getCenter();
+        //console.log(mapCenter.lat);
+        curMapCenter = new L.LatLng(mapCenter.lng,mapCenter.lat);
+        //console.log(curMapCenter);
+        //put the input subsurb in the center of map
+        initMapPanTo(curMapCenter);
+
+    } 
+    else {
         alert("No data returned!")
     }
 
-    console.timeEnd("parsed GeoJSON");
+    console.timeEnd("loadmap.js::gotData: parsed GeoJSON");
+
+
 }
 
 function style(feature) {
@@ -465,14 +518,15 @@ function style(feature) {
         renderVal = props.percent;
     }
 
-    var col = getColor(renderVal, props.population);
+    //var col = getColor(renderVal, props.population);
+    var col = "#FFF056";
 
     return {
         weight : 2,
-        opacity : 1.0,
-        color : col,
-        fillOpacity : 1.0,
-        fillColor : col
+        opacity : 0.8,
+        color : "#b30000",
+        fillOpacity : 0.3,
+        fillColor : "#FFF056"
     };
 }
 
@@ -513,6 +567,7 @@ function highlightFeature(e) {
         currLayer.setStyle({
             weight: 2.5,
             opacity: 0.8,
+            fillOpacity : 0.1,
             color: highlightColour
         });
 

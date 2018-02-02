@@ -21,3 +21,4 @@ class nsw_addresses(db.Model):
 			                                 self.longitude, \
 			                                 self.latitude, \
 			                                 self.mb_2016_code)
+
