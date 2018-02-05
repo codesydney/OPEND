@@ -75,6 +75,8 @@ def get_settings(args):
     settings['data_schema'] = 'census_' + settings['census_year'] + '_data' #args.data_schema or 'census_' + settings['census_year'] + '_data'
     settings['boundary_schema'] = 'census_' + settings['census_year'] + '_bdys' #args.boundary_schema or 'census_' + settings['census_year'] + '_bdys'
     settings['web_schema'] = 'census_' + settings['census_year'] + '_web' #args.web_schema or 'census_' + settings['census_year'] + '_web'
+    settings['default_schema'] = 'public'
+
     settings['data_directory'] = census_data_path.replace("\\", "/")
     settings['boundaries_directory'] = census_bdys_path.replace("\\", "/")
 

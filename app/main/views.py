@@ -1,14 +1,14 @@
 from flask import render_template, flash, redirect, request, url_for, jsonify, Response, current_app 
-from app import db, bootstrap, arguments
+from app import bootstrap, arguments #,db
 from . import main 
-from .models import nsw_addresses
-from .forms import MainForm, ResultForm
+#from .models import nsw_addresses
+from .forms import MainForm, TryAgainForm
 #from .mapfuncs import get_boundary
 import json
 import urllib.request
 from app.population import views as population_views
 from app.birthrate import views as birthrate_views
-from sqlalchemy import text
+#from sqlalchemy import text
 
 
 from datetime import datetime
@@ -101,86 +101,136 @@ def get_db_cursor(commit=False):
 @main.route('/', methods=['GET', 'POST'])
 @main.route('/index', methods=['GET', 'POST'])
 def index():
-	print("==>main/views.py::index: enter")
-	form = MainForm()
-	resultform = ResultForm()
-	
-	if form.validate_on_submit() and form.Submit1.data:
-		InputAddress = form.InputAddress.data
+    print("==>main/views.py::index: enter")
+    form = MainForm()
+    tryagainform = TryAgainForm()
+    
+    if form.validate_on_submit() and form.Submit1.data:
+        InputAddress = form.InputAddress.data
 
-		#************* Get the suburb name and mb code of the chosen address ****************** 
-		query= db.session.query(nsw_addresses.locality_name,nsw_addresses.mb_2016_code).filter(nsw_addresses.address.ilike(InputAddress))
-		suburblist = []
-		mb_2016_codelist=[]
-		for mv in query.all():
-			suburblist.append(mv[0])
-			mb_2016_codelist.append(mv[1])
-		InputSuburb = suburblist[0]
-		mb_2016_code=mb_2016_codelist[0]
+        #************* Get the suburb name and mb code of the chosen address ****************** 
+        with get_db_cursor() as pg_cur:
 
-		#get ssc code from mb code
-		sql1 = text("SELECT ssc_code \
-			from public.mb_ssc_2016 \
-			where mb_code_2016 = :x \
-			")
-		sql2 = sql1.bindparams(x=mb_2016_code)
-		result = db.engine.execute(sql2)
-		searchssclist = []
-		for row in result:
-			searchssclist.append(row[0])
-		InputSSC = searchssclist[0]
-		print("view.py::line 133: InputSSC = "+InputSSC)
+            sql_template = "SELECT add.locality_name, add.mb_2016_code " \
+                "from {0}.nsw_addresses as add " \
+                "where add.address ilike '%s' " \
+                .format(settings['default_schema'])
+            sql = pg_cur.mogrify(sql_template, (AsIs(InputAddress),))            
+
+            print("views.py::index line 120: ",end=' ')
+            print(sql)
+
+            try:
+                pg_cur.execute(sql)
+            except psycopg2.Error:
+                return "I can't SELECT:<br/><br/>" + sql
+
+            rows = pg_cur.fetchall()
+
+            #if there is no address in table matched this input value.
+            if not rows:
+                print("views.py::index: The result of address is empty")
+                return render_template('mainform.html', form=tryagainform)
+
+            for row in rows:
+                InputSuburb = row['locality_name']
+                mb_2016_code = row['mb_2016_code']
+
+            #get ssc code from mb code
+            #I seperate this query from the above one 
+            #because different year may have different correspondence between suburb and other area.
+            sql_template = "SELECT ms.ssc_code " \
+                "from {0}.mb_ssc_2016 as ms " \
+                "where mb_code_2016 = ( '%s') " \
+                .format(settings['default_schema'])
+            sql = pg_cur.mogrify(sql_template, (AsIs(mb_2016_code),))            
+
+            print("views.py::index line 154: ",end=' ')
+            print(sql)
+
+            try:
+                pg_cur.execute(sql)
+            except psycopg2.Error:
+                return "I can't SELECT:<br/><br/>" + sql
+
+            rows = pg_cur.fetchall()
+
+            #if there is no address in table matched this input value.
+            if not rows:
+                print("views.py::index: The result of address is empty")
+                return render_template('mainform.html', form=tryagainform)
+
+            for row in rows:
+                InputSSC = row['ssc_code']
+
+        print("view.py::index: InputSSC = "+InputSSC)
 
 
-		#************* BEGIN - NSW Birth Rate Information API Call ****************** 
-		my_response_birth = birthrate_views.get_detail(InputSuburb)
-		#print(my_response_birth.get_data().decode("utf-8"))
-		json_response_birth = json.loads(my_response_birth.get_data().decode("utf-8"))
-		value_details = []
-		value_details = json_response_birth.get('details')
+        #************* BEGIN - NSW Birth Rate Information API Call ****************** 
+        my_response_birth = birthrate_views.get_detail(InputSuburb)
+        #print(my_response_birth.get_data().decode("utf-8"))
+        json_response_birth = json.loads(my_response_birth.get_data().decode("utf-8"))
+        value_details = []
+        value_details = json_response_birth.get('details')
 
-		birth_rate_list = []
-		for d in value_details:
-			selected_fields=[d['YEAR'],d['LOCALITY'],d['SUBURB'],d['STATE'],d['POSTCODE'],d['COUNT']]
-			birth_rate_list.append(selected_fields)		
-		#************ END- NSW Birth Rate Information API Call **********************
+        birth_rate_list = []
+        for d in value_details:
+            selected_fields=[d['YEAR'],d['LOCALITY'],d['SUBURB'],d['STATE'],d['POSTCODE'],d['COUNT']]
+            birth_rate_list.append(selected_fields)     
+        #************ END- NSW Birth Rate Information API Call **********************
 
-		#************* BEGIN - NSW Population Information API Call ****************** 
-		my_response_popu = population_views.get_detail(InputSuburb)
-		json_response_popu = json.loads(my_response_popu.get_data().decode("utf-8"))
-		value_details = []
-		value_details = json_response_popu.get('details')
+        #************* BEGIN - NSW Population Information API Call ****************** 
+        my_response_popu = population_views.get_detail(InputSuburb)
+        json_response_popu = json.loads(my_response_popu.get_data().decode("utf-8"))
+        value_details = []
+        value_details = json_response_popu.get('details')
 
-		population_list = []
-		for d in value_details:
-			selected_fields=[d['YEAR'],d['CODE'],d['SUBURB'],d['STATE'],d['POSTCODE'],d['POPULATION']]
-			population_list.append(selected_fields)
-		#************ END- NSW Population Information API Call **********************
+        population_list = []
+        for d in value_details:
+            selected_fields=[d['YEAR'],d['CODE'],d['SUBURB'],d['STATE'],d['POSTCODE'],d['POPULATION']]
+            population_list.append(selected_fields)
+        #************ END- NSW Population Information API Call **********************
 
-		return render_template('result.html',
-								resultform=resultform,
-								InputSuburb=InputSuburb,
-								birth_rate_list=birth_rate_list,
+        return render_template('result.html',
+                                #resultform=resultform,
+                                InputSuburb=InputSuburb,
+                                birth_rate_list=birth_rate_list,
                                 population_list=population_list,
                                 mb_2016_code=mb_2016_code,
                                 InputSSC=InputSSC,
-                                stats="g1")								
-								
-	elif resultform.validate_on_submit() and resultform.Submit2.data:	
-         return redirect(url_for('main.index'))
-	else:		
-	    return render_template('mainform.html',
+                                stats="g1")                             
+                                
+    #elif resultform.validate_on_submit() and resultform.Submit2.data:   
+         #return redirect(url_for('main.index'))
+    else:       
+        return render_template('mainform.html',
                                 form=form)
 
 @main.route('/autocomplete', methods=['GET'])
 def autocomplete():
     search = request.args.get('q')
-    sql = text("SELECT nsw_addresses.address from nsw_addresses where tsv_address @@ plainto_tsquery(:x) limit 5")
-    sql2 = sql.bindparams(x=search)
-    result = db.engine.execute(sql2)
+    with get_db_cursor() as pg_cur:
+
+        sql_template = "SELECT nsw_addresses.address " \
+            "from {0}.nsw_addresses " \
+            "where tsv_address @@ plainto_tsquery('%s') " \
+            "limit 5 ".format(settings['default_schema'])
+        sql = pg_cur.mogrify(sql_template, (AsIs(search),))            
+
+        print("views.py::autocomplete: ",end=' ')
+        print(sql)
+
+        try:
+            pg_cur.execute(sql)
+        except psycopg2.Error:
+            return "I can't SELECT:<br/><br/>" + sql
+
+        # Retrieve the results of the query
+        rows = pg_cur.fetchall()
+
     addresslist = []
-    for row in result:
-    	addresslist.append(row[0])
+    for row in rows:
+        addresslist.append(row['address'])
     return jsonify(matching_results=addresslist)
 
 #######################################
@@ -265,6 +315,8 @@ def get_metadata():
           "WHERE lower(sequential_id) IN %s " \
           "ORDER BY sequential_id".format(settings['population_stat'], settings["data_schema"])
 
+    print("views.py::get_metadata: ",end=' ')
+    print(sql)
     
     #with db.engine as pg_cur:
     with get_db_cursor() as pg_cur:
@@ -391,7 +443,7 @@ def get_data():
         sql = pg_cur.mogrify(sql_template, (AsIs(stat_id), AsIs(stat_id), AsIs(stat_id), AsIs(display_zoom),
                                             AsIs(boundary_name), AsIs(boundary_name), AsIs(table_id), AsIs(InputSSC)))
 
-        print("server.py::line 283: ",end=' ')
+        print("views.py::get_data: ",end=' ')
         print(sql)
         try:
             pg_cur.execute(sql)
