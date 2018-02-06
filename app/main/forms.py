@@ -10,5 +10,7 @@ class MainForm(FlaskForm):
 	InputAddress = StringField('Input your address',[validators.Required("Enter your address")])	
 	Submit1 = SubmitField('Get Report',render_kw={"size":"90"})	    
 
-class ResultForm(FlaskForm):
-    Submit2 = SubmitField('Try again',render_kw={"size":"90"})
+class TryAgainForm(FlaskForm):
+    InputAddress = StringField('Cannot find the inputed address, please try again', \
+                    [validators.Required("Enter your address")])
+    Submit1 = SubmitField('Try again',render_kw={"size":"90"})

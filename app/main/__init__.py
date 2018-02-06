@@ -16,4 +16,4 @@ main = Blueprint(
 #main.config.from_object(os.environ['APP_SETTINGS'])
 #db = SQLAlchemy(main)
 
-from . import views, models
+from . import views #, models
