@@ -35,8 +35,9 @@ def get_detail(SUBURB):
     # sql.row_factory = sqlite3.Row
     # db = sql
 
-
-    details_cur = db.execute('select YEAR, CODE, SUBURB, STATE, POSTCODE, POPULATION from NSW_POPULATION where SUBURB like ?', [SUBURB])
+    print("===>population/views.py:: suburb = "+SUBURB)
+    lowsubburb = SUBURB.lower()
+    details_cur = db.execute('select YEAR, CODE, SUBURB, STATE, POSTCODE, POPULATION from NSW_POPULATION where SUBURB = ?', [lowsubburb])
     details = details_cur.fetchall()
 
     return_values = []
@@ -49,7 +50,7 @@ def get_detail(SUBURB):
         detail_dict['STATE']     = detail['STATE']
         detail_dict['POSTCODE']  = detail['POSTCODE']
         detail_dict['POPULATION']     = detail['POPULATION']
-
+        #print("===>population/views.py:: POPULATION = "+detail_dict['POPULATION'])
         return_values.append(detail_dict)
 
     return jsonify({'details' : return_values})
