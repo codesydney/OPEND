@@ -81,11 +81,11 @@ def get_settings(args):
     settings['boundaries_directory'] = census_bdys_path.replace("\\", "/")
 
     # create postgres connect string
-    settings['pg_host'] = "localhost" #args.pghost or os.getenv("PGHOST", "localhost")
+    settings['pg_host'] = "ec2-54-204-43-7.compute-1.amazonaws.com" #"localhost" #args.pghost or os.getenv("PGHOST", "localhost")
     settings['pg_port'] = 5432 #args.pgport or os.getenv("PGPORT", 5432)
-    settings['pg_db'] = "opend" #args.pgdb or os.getenv("POSTGRES_USER", "geo")
-    settings['pg_user'] = "postgres" #args.pguser or os.getenv("POSTGRES_USER", "postgres")
-    settings['pg_password'] = "123456" #args.pgpassword or os.getenv("POSTGRES_PASSWORD", "password")
+    settings['pg_db'] = "de7g0is9n4q8ao" #"opend" #args.pgdb or os.getenv("POSTGRES_USER", "geo")
+    settings['pg_user'] = "ojgfanpbtvdjya" #"postgres" #args.pguser or os.getenv("POSTGRES_USER", "postgres")
+    settings['pg_password'] = "7f6cbd8a70b8fdcb62395a8ad093beb736bc7631fe3628578ba9e6b8ff6d91bb" #"123456" #args.pgpassword or os.getenv("POSTGRES_PASSWORD", "password")
 
     settings['pg_connect_string'] = "dbname='{0}' host='{1}' port='{2}' user='{3}' password='{4}'".format(
         settings['pg_db'], settings['pg_host'], settings['pg_port'], settings['pg_user'], settings['pg_password'])
