@@ -19,6 +19,7 @@ from psycopg2.pool import ThreadedConnectionPool
 from psycopg2.extensions import AsIs
 from contextlib import contextmanager
 
+'''
 #########################################
 # The following codes are for maps
 #########################################
@@ -97,6 +98,7 @@ def get_db_cursor(commit=False):
 #########################################
 ## The above codes are for maps
 #########################################
+'''
 
 @main.route('/', methods=['GET', 'POST'])
 @main.route('/index', methods=['GET', 'POST'])
