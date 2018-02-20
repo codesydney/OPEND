@@ -19,15 +19,6 @@ from psycopg2.pool import ThreadedConnectionPool
 from psycopg2.extensions import AsIs
 from contextlib import contextmanager
 
-#########################################
-# The following codes are for maps
-#########################################
-# set command line arguments
-args = arguments.set_arguments()
-
-# get settings from arguments
-settings = arguments.get_settings(args)
-
 # create database connection pool
 pool = ThreadedConnectionPool(
     10, 30,
@@ -114,7 +105,7 @@ def index():
             sql_template = "SELECT add.locality_name, add.mb_2016_code " \
                 "from {0}.nsw_addresses as add " \
                 "where add.address ilike '%s' " \
-                .format(settings['default_schema'])
+                .format('public')
             sql = pg_cur.mogrify(sql_template, (AsIs(InputAddress),))            
 
             print("views.py::index line 120: ",end=' ')
@@ -142,7 +133,7 @@ def index():
             sql_template = "SELECT ms.ssc_code " \
                 "from {0}.mb_ssc_2016 as ms " \
                 "where mb_code_2016 = ( '%s') " \
-                .format(settings['default_schema'])
+                .format('public')
             sql = pg_cur.mogrify(sql_template, (AsIs(mb_2016_code),))            
 
             print("views.py::index line 154: ",end=' ')
@@ -214,7 +205,7 @@ def autocomplete():
         sql_template = "SELECT nsw_addresses.address " \
             "from {0}.nsw_addresses " \
             "where tsv_address @@ plainto_tsquery('%s') " \
-            "limit 5 ".format(settings['default_schema'])
+            "limit 5 ".format('public')
         sql = pg_cur.mogrify(sql_template, (AsIs(search),))            
 
         print("views.py::autocomplete: ",end=' ')
@@ -313,7 +304,7 @@ def get_metadata():
           "ELSE 'percent' END AS maptype " \
           "FROM {1}.metadata_stats " \
           "WHERE lower(sequential_id) IN %s " \
-          "ORDER BY sequential_id".format(settings['population_stat'], settings["data_schema"])
+          "ORDER BY sequential_id".format("g3", 'public')
 
     print("views.py::get_metadata: ",end=' ')
     print(sql)
@@ -437,7 +428,7 @@ def get_data():
               "FROM {0}.%s AS bdy " \
               "INNER JOIN {1}.%s_%s AS tab ON bdy.id = tab.{2} " \
               "WHERE bdy.id = '%s'" \
-              .format(settings['web_schema'], settings['data_schema'], settings['region_id_field'])
+              .format('census_2016_web', 'census_2016_data', "region_id")
         #print("==>main/views.py::get_data: enter line 389")
 
         sql = pg_cur.mogrify(sql_template, (AsIs(stat_id), AsIs(stat_id), AsIs(stat_id), AsIs(display_zoom),
