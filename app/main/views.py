@@ -22,10 +22,10 @@ from contextlib import contextmanager
 # create database connection pool
 pool = ThreadedConnectionPool(
     10, 30,
-    database="de7g0is9n4q8ao",
-    user="ojgfanpbtvdjya",
-    password="7f6cbd8a70b8fdcb62395a8ad093beb736bc7631fe3628578ba9e6b8ff6d91bb",
-    host="ec2-54-204-43-7.compute-1.amazonaws.com",
+    database="d1l2hpefphgah3",
+    user="zohdghtrwzqtiz",
+    password="7b7df36d4c206a3601cbf365ec83462af9118e9abff84d18ab219ca31eb49d57",
+    host="ec2-184-72-219-186.compute-1.amazonaws.com",
     port=5432)
 
 # get the boundary name that suits each (tiled map) zoom level and its minimum value to colour in
