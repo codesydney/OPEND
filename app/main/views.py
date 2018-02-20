@@ -19,7 +19,7 @@ from psycopg2.pool import ThreadedConnectionPool
 from psycopg2.extensions import AsIs
 from contextlib import contextmanager
 
-'''
+
 #########################################
 # The following codes are for maps
 #########################################
@@ -37,7 +37,7 @@ pool = ThreadedConnectionPool(
     password=settings["pg_password"],
     host=settings["pg_host"],
     port=settings["pg_port"])
-
+'''
 # get the boundary name that suits each (tiled map) zoom level and its minimum value to colour in
 def get_boundary(zoom_level):
 '''
