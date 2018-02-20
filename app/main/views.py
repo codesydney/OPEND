@@ -10,6 +10,7 @@ from app.population import views as population_views
 from app.birthrate import views as birthrate_views
 #from sqlalchemy import text
 
+
 from datetime import datetime
 import ast
 import psycopg2
@@ -26,6 +27,67 @@ pool = ThreadedConnectionPool(
     password="7f6cbd8a70b8fdcb62395a8ad093beb736bc7631fe3628578ba9e6b8ff6d91bb",
     host="ec2-54-204-43-7.compute-1.amazonaws.com",
     port=5432)
+
+# get the boundary name that suits each (tiled map) zoom level and its minimum value to colour in
+def get_boundary(zoom_level):
+
+    '''
+    if zoom_level < 7:
+        boundary_name = "ste"
+        min_display_value = 2025
+    elif zoom_level < 9:
+        boundary_name = "sa4"
+        min_display_value = 675
+    elif zoom_level < 11:
+        boundary_name = "sa3"
+        min_display_value = 225
+    elif zoom_level < 14:
+        boundary_name = "sa2"
+        min_display_value = 75
+    elif zoom_level < 17:
+        boundary_name = "sa1"
+        min_display_value = 25
+    else:
+        boundary_name = "mb"
+        min_display_value = 5
+
+    return boundary_name, min_display_value
+    '''
+
+    #BinLiu: alway show suburb boundary.
+    return "ssc",5
+
+@contextmanager
+def get_db_connection():
+    """
+    psycopg2 connection context manager.
+    Fetch a connection from the connection pool and release it.
+    """
+    try:
+        connection = pool.getconn()
+        yield connection
+    finally:
+        pool.putconn(connection)
+
+
+@contextmanager
+def get_db_cursor(commit=False):
+    """
+    psycopg2 connection.cursor context manager.
+    Creates a new cursor and closes it, committing changes if specified.
+    """
+    with get_db_connection() as connection:
+        cursor = connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        try:
+            yield cursor
+            if commit:
+                connection.commit()
+        finally:
+            cursor.close()
+
+#########################################
+## The above codes are for maps
+#########################################
 
 @main.route('/', methods=['GET', 'POST'])
 @main.route('/index', methods=['GET', 'POST'])
