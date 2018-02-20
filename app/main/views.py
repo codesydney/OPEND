@@ -18,20 +18,14 @@ from psycopg2.pool import ThreadedConnectionPool
 from psycopg2.extensions import AsIs
 from contextlib import contextmanager
 
-# set command line arguments
-args = arguments.set_arguments()
-
-# get settings from arguments
-settings = arguments.get_settings(args)
-
 # create database connection pool
 pool = ThreadedConnectionPool(
     10, 30,
-    database=settings["pg_db"],
-    user=settings["pg_user"],
-    password=settings["pg_password"],
-    host=settings["pg_host"],
-    port=settings["pg_port"])
+    database="de7g0is9n4q8ao",
+    user="ojgfanpbtvdjya",
+    password="7f6cbd8a70b8fdcb62395a8ad093beb736bc7631fe3628578ba9e6b8ff6d91bb",
+    host="ec2-54-204-43-7.compute-1.amazonaws.com",
+    port=5432)
 
 @main.route('/', methods=['GET', 'POST'])
 @main.route('/index', methods=['GET', 'POST'])
