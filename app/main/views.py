@@ -40,7 +40,7 @@ pool = ThreadedConnectionPool(
 
 # get the boundary name that suits each (tiled map) zoom level and its minimum value to colour in
 def get_boundary(zoom_level):
-
+'''
     '''
     if zoom_level < 7:
         boundary_name = "ste"
@@ -62,7 +62,7 @@ def get_boundary(zoom_level):
         min_display_value = 5
 
     return boundary_name, min_display_value
-    '''
+
 
     #BinLiu: alway show suburb boundary.
     return "ssc",5
@@ -99,7 +99,6 @@ def get_db_cursor(commit=False):
 ## The above codes are for maps
 #########################################
 '''
-
 @main.route('/', methods=['GET', 'POST'])
 @main.route('/index', methods=['GET', 'POST'])
 def index():
