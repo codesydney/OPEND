@@ -19,6 +19,15 @@ from psycopg2.pool import ThreadedConnectionPool
 from psycopg2.extensions import AsIs
 from contextlib import contextmanager
 
+#########################################
+# The following codes are for maps
+#########################################
+# set command line arguments
+args = arguments.set_arguments()
+
+# get settings from arguments
+settings = arguments.get_settings(args)
+
 # create database connection pool
 pool = ThreadedConnectionPool(
     10, 30,
