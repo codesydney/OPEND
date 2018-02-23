@@ -21,7 +21,7 @@ from contextlib import contextmanager
 
 # create database connection pool
 pool = ThreadedConnectionPool(
-    10, 15,
+    2, 5,
     database="d1l2hpefphgah3",
     user="zohdghtrwzqtiz",
     password="7b7df36d4c206a3601cbf365ec83462af9118e9abff84d18ab219ca31eb49d57",
