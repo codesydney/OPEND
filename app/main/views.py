@@ -304,7 +304,7 @@ def get_metadata():
           "ELSE 'percent' END AS maptype " \
           "FROM {1}.metadata_stats " \
           "WHERE lower(sequential_id) IN %s " \
-          "ORDER BY sequential_id".format("g3", 'public')
+          "ORDER BY sequential_id".format("g3", 'census_2016_data')
 
     print("views.py::get_metadata: ",end=' ')
     print(sql)
